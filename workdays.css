@@ -1,0 +1,157 @@
+﻿body {
+	background-color:silver;
+	font-family: Arial;
+}
+
+.bodyAdmin {
+	background-color:maroon;
+	font-family: Arial;
+}
+
+.heading {
+	float:left;
+	background-color:white;
+	border: fuchsia 2px solid;
+	padding: 8px;
+	margin: 20px 20px 0px 20px;
+	border-radius: 10px;
+	font-size: 40px; 
+	font-weight: bold; 
+	color: blue;
+	width: 45%;
+	text-align:center;
+	height: 50px;
+}
+
+.showName{
+	float:left;
+	background-color: yellow;
+	border: fuchsia 2px solid;
+	padding: 8px;
+	margin: 20px 20px 0px 20px;
+	border-radius: 10px;
+	font-size:medium; 
+	font-weight: bold; 
+	width: 45%;
+	text-align:center;
+	
+}
+
+.nextDay {
+	float:left;
+	background-color:yellow;
+	border: fuchsia 2px solid;
+	padding: 8px;
+	margin: 20px 20px 0px 20px;
+	border-radius: 10px;
+	font-size: 20px; 
+	font-weight: bold; 
+	color: blue;
+	width: 45%;
+	text-align:center;
+	height: 50px;
+}
+
+.addTask{
+	border: fuchsia 2px solid;
+	background-color: Yellow;
+}
+.clear {
+	clear:both; 
+	height: 2px;
+ }
+
+img{
+	border: fuchsia 1px solid;
+}
+
+table{
+	background-color: #eeeeee;
+	border: fuchsia 2px solid;
+	border-radius: 10px;
+}
+
+.wdTable{
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+	font-family:Arial;
+	font-size: small;
+	border: fuchsia 1px solid;
+	border-radius: 20px;
+	background-color: Yellow;
+	padding: 3px;
+}
+
+.subtle{
+	background-color: #eeeeee;
+}
+
+.bodyMain {
+	float: none;
+	background-color:white;
+	border: fuchsia 1px solid;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	min-width: 630px;
+}
+
+.inputText{
+	width: 800px;
+}
+
+th {
+	border-bottom: yellow 2px solid;
+	color: blue;
+	font-weight: bold;
+	font-size: larger;	
+}
+
+.tdTaskName {
+	border-top: #333333 1px solid;
+	border-bottom: fuchsia 1px solid;
+	color: blue;
+	font-size: larger;
+	font-weight: bold;
+	padding-top: 10px;
+	/*text-decoration:underline;*/
+}
+
+.nextDayTitle{
+	color:red;
+	font-size:25px;
+}
+
+.tdnorm {
+	border-top: #333333 1px solid;
+	border-bottom: fuchsia 1px solid;
+	text-align:center;
+	padding-top: 10px;
+}
+
+.tddesc{
+	color:black;
+	font-family: Arial;
+}
+
+.tdworkers{
+	padding-bottom: 20px;
+	color:green;
+}
+
+.tdNoticeMe{
+	border-top: #333333 1px solid;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: fuchsia 1px solid;
+}
+
+.worker{
+	border-bottom: silver 1px dashed;
+	float: left;
+	margin-left: 15px;
+}

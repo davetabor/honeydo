@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" href="workdays.css" media="screen" />
+	<script type="text/javascript">
+		function removeMyName() {
+		  var SearchString = window.location.search.substring(1);
+ 	      var VariableArray = SearchString.split('&');
+ 	      var id="";
+ 	      var x="";
+    	  for(var i = 0; i < VariableArray.length; i++){
+        	  var KeyValuePair = VariableArray[i].split('=');
+        	  if(KeyValuePair[0] == "id"){
+            	  id = KeyValuePair[1];
+        	  }
+        	  if(KeyValuePair[0] == "x"){
+            	  x = KeyValuePair[1];
+        	  }
+    	  }
+		  if (window.XMLHttpRequest) {
+		    xmlhttp=new XMLHttpRequest();
+		  } else { 
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState==4 && xmlhttp.status==200) 		    {
+		      window.location.href="index.html";
+		    }
+		  }
+		  xmlhttp.open("GET","removeMe.php?id=" + id + "\&x=" + x,true);
+		  xmlhttp.send();
+		}
+		
+		function showTask() {
+		  var SearchString = window.location.search.substring(1);
+ 	      var VariableArray = SearchString.split('&');
+ 	      var id="";
+ 	      var x="";
+    	  for(var i = 0; i < VariableArray.length; i++){
+        	  var KeyValuePair = VariableArray[i].split('=');
+        	  if(KeyValuePair[0] == "id"){
+            	  id = KeyValuePair[1];
+        	  }
+        	  if(KeyValuePair[0] == "x"){
+            	  x = KeyValuePair[1];
+        	  }
+    	  }
+		  if (window.XMLHttpRequest) {
+		    xmlhttp=new XMLHttpRequest();
+		  } else { 
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+		      document.getElementById("projects").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		  xmlhttp.open("GET","showMyName.php?id=" + id + "&x=" + x,true);
+		  xmlhttp.send();
+		}
+	</script>
+	<style type="text/css">
+	.auto-style1 {
+		font-size: 25px;
+		color: #FFBF00;
+	}
+	</style>
+</head>
+
+<body onload="showTask()">
+<div class="heading">
+	STM Workday Projects
+</div>
+<div class="nextDay">	
+	I CAN HELP!
+</div>
+<div class="clear"></div>
+<div class="bodyMain">
+	<div id="projects"></div>
+</div>
+<div><input type="button" value="Return To Task List" onclick="window.location.href='index.html'" /></div>
+</body>
+
+
+</html>

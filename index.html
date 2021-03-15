@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" href="workdays.css" media="screen" />
+	<link rel="stylesheet" href="workdays.css" media="handheld" />
+	<link rel="stylesheet" href="workdays-prt.css" media="print" />
+	<script>
+		function getProjects() {
+ 			if (window.XMLHttpRequest) {
+			    xmlhttp=new XMLHttpRequest();
+		    } else { 
+			    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+			    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+			        document.getElementById("projects").innerHTML=xmlhttp.responseText;
+			    }
+		    }
+		    xmlhttp.open("GET","workdays.php",true);
+		    xmlhttp.send();
+		}
+	</script>
+</head>
+
+<body onload="getProjects(); return false;">
+<div class="heading">
+	STM Workday Projects<br/>
+</div>
+<div class="nextDay	">
+	<div class="nextDayTitle">Workdays: Every Saturday!</div>
+	Workday Schedule:  <a href="http://stellafane.org/news#events">Click Here!</a>
+</div>
+<div class="clear"></div>
+<div style="text-align:center; margin-top: 10px;">	<a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a new task</a></div>
+<div class="bodyMain">
+<div id="projects"></div>
+</div>
+</body>
+
+
+</html>

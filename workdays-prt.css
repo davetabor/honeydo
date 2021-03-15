@@ -1,0 +1,109 @@
+﻿body {
+	font-family: Arial;
+}
+
+.bodyAdmin {
+	font-family: Arial;
+}
+
+.heading {
+	float:left;
+	border: gray 2px solid;
+	padding: 3px;
+	margin: 5px 5px 0px 5px;
+	border-radius: 10px;
+	font-weight: bold; 
+	font-size: 24px;
+	width: 45%;
+	text-align:center;
+	height: 50px;
+}
+
+.nextDay {
+	float:left;
+	border: gray 2px solid;
+	padding: 3px;
+	margin: 5px 5px 0px 5px;
+	border-radius: 10px;
+	font-weight: bold; 
+	width: 45%;
+	text-align:center;
+	height: 50px;
+}
+
+.addTask{
+	border: gray 2px solid;
+}
+.clear {
+	clear:both; 
+	height: 2px;
+ }
+
+img{
+	border: gray 1px solid;
+}
+
+table{
+	border: gray 2px solid;
+	border-radius: 10px;
+}
+
+.wdTable{
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	font-family:Arial;
+	font-size: small;
+	border: pink 1px solid;
+	border-radius: 20px;
+	padding: 3px;
+}
+
+.bodyMain {
+	float: none;
+	border: gray 1px solid;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.inputText{
+	width: 800px;
+}
+
+th {
+	border-bottom: black 2px solid;
+	font-weight: bold;
+}
+
+.tdTaskName {
+	border-top: #333333 1px solid;
+	border-bottom: gray 1px solid;
+	font-weight: bold;
+	padding-top: 10px;
+	/*text-decoration:underline;*/
+}
+
+.tdnorm {
+	border-top: #333333 1px solid;
+	border-bottom: gray 1px solid;
+	text-align:center;
+	padding-top: 10px;
+}
+
+.tddesc{
+	font-family: Arial;
+}
+
+.tdworkers{
+	padding-bottom: 20px;
+}
+
+.tdNoticeMe{
+	border-top: #333333 1px solid;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: gray 1px solid;
+}

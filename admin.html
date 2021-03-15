@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" href="workdays.css" />
+	<script>
+		function getProjects() {
+ 			if (window.XMLHttpRequest) {
+			    xmlhttp=new XMLHttpRequest();
+		    } else { 
+			    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+			    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+			        document.getElementById("projects").innerHTML=xmlhttp.responseText;
+			    }
+		    }
+		    xmlhttp.open("GET","admin.php",true);
+		    xmlhttp.send();
+		}
+		function clearHelpers() {
+		    if (cbClear.checked == true){
+	 			if (window.XMLHttpRequest) {
+				    xmlhttp=new XMLHttpRequest();
+			    } else { 
+				    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.onreadystatechange=function() {
+				    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				        getProjects();
+				    } else {
+				        document.getElementById("projects").innerHTML="FAILED";
+				    }
+			    }
+			    xmlhttp.open("GET","clearHelpers.php",true);
+			    xmlhttp.send();
+		    } else {
+		    	alert("You can't clear the helpers without checking the box next to the Clear Helper List button!");
+		    }
+		}
+	</script>
+</head>
+
+<body class="bodyAdmin" onload="getProjects(); return false;">
+<div class="heading" style="height: 90px;">
+	STM Workday Projects Admin<br/>
+	<div style="margin-top:20px; text-align:center;">
+		<div style="margin-left:65px; border: white 1px dashed; width: 150px;float: left"><input type="button" class="addTask" id="addTask" value="Add New Task" onclick="window.location.href='add.html'" /></div>
+		<div style="border: gray 1px dashed; width: 170px;float: left"><input type="checkbox" id="cbClear" name="cbClear" /><input type="button" name="clearHelpers" id="clearHelpers" value="Clear All Helper Lists" onclick="clearHelpers()" /></div> 
+		<div style="border: white 1px dashed; width: 150px;float: left"><input type="button" name="index" value="View Main Page" onclick="window.location.href='index.html'" /></div>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="bodyMain">
+<div id="projects"></div>
+</div>
+</body>
+
+
+</html>

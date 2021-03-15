@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" href="workdays.css" media="screen" />
+	<script>
+		function addTask() {
+    	  alert(pw);
+		  if (window.XMLHttpRequest) {
+		    xmlhttp=new XMLHttpRequest();
+		  } else { 
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+		      document.getElementById("projects").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		  xmlhttp.open("GET","add.php",true);
+		  xmlhttp.send();
+		}
+	</script>
+</head>
+
+<body>
+	<div class="heading">
+		STM Workday Projects<br/>
+	</div>
+<div class="heading">
+	Add New Project
+</div>
+	<div class="clear"></div>
+	<div class="bodyMain">
+		<form name="form1" action="add.php" method="post">
+			<table class="addTable">
+				<tr>
+					<th>Item</th><th>Entry</th>
+				</tr>
+				<tr>
+					<td>Task Name</td>
+					<td>
+						<input type="text" id="tbTask" name="tbTask" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Description</td>
+					<td>
+						<input type="text" id="tbDesc" name="tbDesc" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Leader</td>
+					<td>
+						<input type="text" id="tbLeader" name="tbLeader" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Leader Phone</td>
+					<td>
+						<input type="text" id="tbPhone" name="tbPhone" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Leader Email</td>
+					<td>
+						<input type="text" id="tbEmail" name="tbEmail" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Goal Completion</td>
+					<td>
+						<input type="text" id="tbGoal" name="tbGoal" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Members Needed (est.)</td>
+					<td>
+						<input type="text" id="tbMembers" name="tbMembers" class="inputText" />
+					</td>
+				</tr>
+				<tr>
+					<td>Members Helping</td>
+					<td>
+						<input type="text" id="tbWorkers" name="tbWorkers" class="inputText" />
+					</td>
+				</tr>
+			</table>
+			<br/>
+			<input type="submit" name="addTask" value="Add This Task" onclick="addTask(); return false;" />
+			<div id="projects"></div>
+		</form>
+	</div>
+	<div>
+		<input type="button" value="Return To Task List" onclick="window.location.href='admin.html'" />
+	</div>
+</body>
+
+
+</html>

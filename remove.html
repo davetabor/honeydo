@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" href="workdays.css" media="screen" />
+	<script>
+		function removeThisTask() {
+		  var SearchString = window.location.search.substring(1);
+ 	      var VariableArray = SearchString.split('&');
+ 	      var id="";
+    	  for(var i = 0; i < VariableArray.length; i++){
+        	  var KeyValuePair = VariableArray[i].split('=');
+        	  if(KeyValuePair[0] == "id"){
+            	  id = KeyValuePair[1];
+        	  }
+    	  }
+		  if (window.XMLHttpRequest) {
+		    xmlhttp=new XMLHttpRequest();
+		  } else { 
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+		      document.getElementById("projects").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		  xmlhttp.open("GET","remove.php?id=" + id, true);
+		  xmlhttp.send();
+		}
+
+		function showTask() {
+		  var SearchString = window.location.search.substring(1);
+ 	      var VariableArray = SearchString.split('&');
+ 	      var id="";
+    	  for(var i = 0; i < VariableArray.length; i++){
+        	  var KeyValuePair = VariableArray[i].split('=');
+        	  if(KeyValuePair[0] == "id"){
+            	  id = KeyValuePair[1];
+        	  }
+    	  }
+    	  
+		  if (window.XMLHttpRequest) {
+		    xmlhttp=new XMLHttpRequest();
+		  } else { 
+		    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		  xmlhttp.onreadystatechange=function() {
+		    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+		      document.getElementById("projects").innerHTML=xmlhttp.responseText;
+		    }
+		  }
+		  xmlhttp.open("GET","show.php?id=" + id,true);
+		  xmlhttp.send();
+		}
+	</script>
+</head>
+
+<body onload="showTask();">
+<div class="heading">
+	STM Workday Projects<br/>
+</div>
+<div class="nextDay">
+	Remove This Project
+</div>
+<div class="clear"></div>
+	<div class="bodyMain">
+		<div id="projects"></div>
+		<br/>
+		<button onclick="removeThisTask();">Remove This Task</button>
+		<button onclick="window.location.href='admin.html'">Return To Admin List</button>
+	</div>
+</body>
+
+
+</html>
