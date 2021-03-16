@@ -3,6 +3,12 @@
 	font-family: Arial;
 }
 
+#events {
+	padding: 5px;
+	margin: 1px;
+	height: 500px;
+}
+
 .bodyAdmin {
 	background-color:maroon;
 	font-family: Arial;
@@ -39,7 +45,7 @@
 
 .nextDay {
 	float:left;
-	background-color:yellow;
+	background-color: white;
 	border: fuchsia 2px solid;
 	padding: 8px;
 	margin: 20px 20px 0px 20px;
@@ -106,7 +112,7 @@ a {
 
 th {
 	border-bottom: yellow 2px solid;
-	color: blue;
+	color: black;
 	font-weight: bold;
 	font-size: larger;	
 }
@@ -114,7 +120,7 @@ th {
 .tdTaskName {
 	border-top: #333333 1px solid;
 	border-bottom: fuchsia 1px solid;
-	color: blue;
+	color: dodgerblue;
 	font-size: larger;
 	font-weight: bold;
 	padding-top: 10px;

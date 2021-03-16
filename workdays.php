@@ -1,5 +1,8 @@
 <?php
-    echo "<div>";	
+    echo "<div>";
+	$daysTil = (new DateTime('2021-08-04'))->diff(new DateTime())->days;
+	$weeks = (int)($daysTil/7);
+	echo "<h1>" . $daysTil . " days (" . $weeks . " weeks) until convention</h1>";
     echo "<table class=\"wdTable\" >";
     echo "<tr>";
     echo "<th>Task</th>";
@@ -63,5 +66,6 @@
     	}
  		echo " - <a href=\"addMe.html?id=" . $id . "\">I Can Help!</a></td></tr>";
     }
-    echo "</table></div>";
-?>
+    echo "</table>";
+	echo "</div>";
+	
