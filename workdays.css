@@ -1,6 +1,12 @@
 ﻿body {
 	background-color:silver;
-	font-family: Arial;
+	font-family: Krub;
+}
+ol {
+	margin: 2px;
+}
+p {
+	margin: 1px;
 }
 
 #events {
@@ -26,7 +32,25 @@
 	color: blue;
 	width: 45%;
 	text-align:center;
-	height: 50px;
+	height: 80px;
+}
+.alert {
+	float:left;
+	background-color:white;
+	border: fuchsia 2px solid;
+	padding: 0 8px 0 8px;
+	margin: 20px 20% 0px 20%;
+	border-radius: 10px;
+	font-weight: bold; 
+	/* color: blue; */
+	text-align:left;
+	/* height: 50px; */
+	width: 60%;
+}
+.alertheader{
+	color: red;
+	text-align: center;
+	margin: 2px;
 }
 
 .showName{
@@ -55,7 +79,7 @@
 	color: blue;
 	width: 45%;
 	text-align:center;
-	height: 50px;
+	height: 80px;
 }
 
 .addTask{
@@ -99,7 +123,7 @@ a {
 .bodyMain {
 	float: none;
 	background-color:white;
-	border: fuchsia 1px solid;
+	border: black 1px solid;
 	padding: 20px;
 	margin: 20px;
 	border-radius: 10px;

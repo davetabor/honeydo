@@ -3,9 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="workdays.css" media="screen" />
 	<link rel="stylesheet" href="workdays.css" media="handheld" />
 	<link rel="stylesheet" href="workdays-prt.css" media="print" />
+	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
 	<script>
 		function getProjects() {
 			if (window.XMLHttpRequest) {
@@ -26,22 +28,61 @@
 </head>
 
 <body onload="getProjects(); return false;">
+	<!-- <div class="alert">
+		<h2 class="alertheader">State of Vermont Requirements - Members and Guests</h2>
+		<ol>
+			<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have documented vaccine
+				completion more than 14 days prior</li>
+			<li>Everyone: Masks must be worn when inside buildings and within 6 feet of others outdoors</li>
+			<li>Everyone: You must sign-in in the pavilion upon entry to the site
+				<ul>
+					<li>Log your name, phone number and temperature in the log just inside the door</li>
+				</ul>
+			</li>
+		</ol>
+		<p color="black">Thank you!</p>
+	</div> -->
 	<div class="heading">
 		STM Workday Projects<br />
 	</div>
 	<div class="nextDay	">
-		<div class="nextDayTitle">Workdays: Every Saturday!</div>
-		Workday Schedule: Below or <a href="#eventlist">Click Here!</a>
+		Workdays 'Official' Schedule: <a href="https://stellafane.org/news#events">Click Here!</a>
+		<div class="nextDayTitle">But, Realistically - Every Saturday!</div>
 	</div>
 	<div class="clear"></div>
-	<div style="text-align:center; margin-top: 10px;"> <a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a
-			new task</a></div>
+	<!-- <div style="text-align:center; margin-top: 10px;"> <a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a
+			new task</a></div> -->
 	<div class="bodyMain">
 		<div id="projects"></div>
 	</div>
-	<div id="eventlist">
-		<iframe id="events" width="100%" src="https://stellafane.org/news#events" title="Workday Schedule"></iframe>
+
+	<div class="w3-container">
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content">
+				<div class="w3-container alert">
+					<span onclick="document.getElementById('id01').style.display='none'"
+						class="w3-button w3-display-topright">&times;</span>
+					<h2 class="alertheader">State of Vermont Requirements - Members and Guests</h2>
+					<ol>
+						<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
+							documented vaccine
+							completion more than 14 days prior</li>
+						<li>Everyone: Masks must be worn when inside buildings and within 6 feet of others outdoors</li>
+						<li>Everyone: You must sign-in in the pavilion upon entry to the site
+							<ul>
+								<li>Log your name, phone number and temperature in the log just inside the door</li>
+							</ul>
+						</li>
+					</ol>
+					<p color="black">Thank you!</p>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<script>
+		document.getElementById('id01').style.display = 'block';
+	</script>
 </body>
 
 

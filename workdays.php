@@ -2,8 +2,8 @@
     echo "<div>";
 	$daysTil = (new DateTime('2021-08-04'))->diff(new DateTime())->days;
 	$weeks = (int)($daysTil/7);
-	echo "<h1>" . $daysTil . " days (" . $weeks . " weeks) until convention</h1>";
-    echo "<table class=\"wdTable\" >";
+	echo '<h2 class="alertheader">' . $daysTil . ' days (' . $weeks . ' weeks) until convention</h2>';
+    echo '<table class="wdTable" >';
     echo "<tr>";
     echo "<th>Task</th>";
     echo "<th>Leader</th>";
@@ -34,7 +34,7 @@
     		if ((string)$item->leader != ""){
     			echo "<td class=\"tdnorm\">" . (string)$item->leader . "</td>";
     		}else{
-    			echo "<td class=\"tdNoticeMe\"><a href=\"mailto:mirrorgrinder@gmail.com?subject=(STM Project) " . $subject . "&body=I can be team leader!\">Sign up as Team Leader</a></td>";
+    			echo "<td class=\"tdNoticeMe\"><a href=\"mailto:mirrorgrinder@gmail.com?subject=(STM Project) " . $subject . "&body=I can be team leader!\">I'll be Team Leader</a></td>";
     		}
     	}
     	if ((string)$item->leaderPhone != ""){
