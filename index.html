@@ -4,85 +4,246 @@
 
 <head>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="workdays.css" media="screen" />
 	<link rel="stylesheet" href="workdays.css" media="handheld" />
 	<link rel="stylesheet" href="workdays-prt.css" media="print" />
-	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
-	<script>
-		function getProjects() {
-			if (window.XMLHttpRequest) {
-				xmlhttp = new XMLHttpRequest();
-			} else {
-				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			xmlhttp.onreadystatechange = function () {
-				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					document.getElementById("projects").innerHTML = xmlhttp.responseText;
-				}
-			}
-			xmlhttp.open("GET", "workdays.php", true);
-			xmlhttp.send();
-			window.scrollTo(0, 0);
-		}
-	</script>
+	<script src="workdays.js"></script>
 </head>
 
-<body onload="getProjects(); return false;">
-	<!-- <div class="alert">
-		<h2 class="alertheader">State of Vermont Requirements - Members and Guests</h2>
-		<ol>
-			<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have documented vaccine
-				completion more than 14 days prior</li>
-			<li>Everyone: Masks must be worn when inside buildings and within 6 feet of others outdoors</li>
-			<li>Everyone: You must sign-in in the pavilion upon entry to the site
-				<ul>
-					<li>Log your name, phone number and temperature in the log just inside the door</li>
-				</ul>
-			</li>
-		</ol>
-		<p color="black">Thank you!</p>
-	</div> -->
+<!-- <body onload="getProjects(); return false;"> -->
+
+<body>
 	<div class="heading">
-		STM Workday Projects<br />
+		STM Workdays<br />
 	</div>
 	<div class="nextDay	">
 		Workdays 'Official' Schedule: <a href="https://stellafane.org/news#events">Click Here!</a>
 		<div class="nextDayTitle">But, Realistically - Every Saturday!</div>
 	</div>
 	<div class="clear"></div>
-	<!-- <div style="text-align:center; margin-top: 10px;"> <a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a
-			new task</a></div> -->
+	<div style="text-align:center; margin-top: 10px;"> <a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a
+			new task</a></div style="margin: 10px 3% 10px 3%;">
+
 	<div class="bodyMain">
-		<div id="projects"></div>
+		<div
+			style="margin: 0.5%; overflow: hidden; border: orange 1px solid; padding: 5px; border-radius: 5px; background-color: lightgray; min-width: 600px; width: 99%;">
+			<div
+				style="height: 100%; min-height: 100px; padding: 5px; border: green 1px solid; background-color: white; float: left; width:33%; margin-right: 0.5%">
+				<div>
+					<h4 style="width: 90%; float: left">Site</h4></a>
+					<div onclick="addTask('site'); return false;"
+						style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+						+</div>
+					<br />
+					<div style="width: 100%; overflow: hidden;"
+						onclick='document.getElementById("task1").style.display = "block";'>Task One
+					</div>
+					<div id="task1" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<h4 style="width: 90%; float: left">Clubhouse</h4>
+					<div onclick="addTask('site'); return false;"
+						style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+						+</div>
+					<br />
+					<div style="width: 100%; overflow: hidden;"
+						onclick='document.getElementById("task2").style.display = "block";'>Task One
+					</div>
+					<div id="task2" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<h4 style="width: 90%; float: left">Porter Turret</h4>
+					<div onclick="addTask('site'); return false;"
+						style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+						+</div>
+					<br />
+					<div style="width: 100%; overflow: hidden;"
+						onclick='document.getElementById("task3").style.display = "block";'>Task One
+					</div>
+					<div id="task3" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<h4 style="width: 90%; float: left">Simoni Observatory</h4>
+					<div onclick="addTask('site'); return false;"
+						style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+						+</div>
+					<br />
+					<div style="width: 100%; overflow: hidden;"
+						onclick='document.getElementById("task4").style.display = "block";'>Task One
+					</div>
+					<div id="task4" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<h4 style="width: 90%; float: left">M44</h4></a>
+					<div onclick="addTask('site'); return false;"
+						style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+						+</div>
+					<br />
+					<div style="width: 100%; overflow: hidden;" onclick='document.getElementB
+				<div>yId("task5").style.display = "block";'>Task One</div>
+					<div id="task5" style="display: none">Description</div>
+				</div>
+			</div>
+			<div
+				style="height: 100%; min-height: 100px; padding: 5px; border: blue 1px solid; background-color: white; float: left; width:33%; margin-right: 0.5%">
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">McGregor Observatory</h4>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task6").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task6" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">Breuning Observatory</h4>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task7").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task7" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">Bunkhouse</h4>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task8").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task8" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">Fuel Shed</h4>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task9").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task9" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<h4 style="width: 90%; float: left">Tuthill Towers</h4>
+					<div onclick="addTask('site'); return false;"
+						style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+						+</div>
+					<br />
+					<div style="width: 100%; overflow: hidden;" onclick='document.getElementBy
+				<div>Id("task10").style.display = "block";'>Task One</div>
+					<div id="task10" style="display: none">Description</div>
+				</div>
+			</div>
+			<div
+				style="height: 100%; min-height: 100px; padding: 5px; border: red 1px solid; background-color: white; float: left; width:33%">
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">Amphitheater</h4>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task11").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task11" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">Fruit Stand</h4>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task12").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task12" style="display: none">Description</div>
+				</div>
+				<hr>
+				<div>
+					<div>
+						<h4 style="width: 90%; float: left">Other</h4></a>
+						<div onclick="addTask('site'); return false;"
+							style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; float: left;">
+							+</div>
+						<div style="width: 100%; overflow: hidden;"
+							onclick='document.getElementById("task13").style.display = "block";'>Task
+							One</div>
+					</div>
+					<div id="task13" style="display: none">Description</div>
+				</div>
+			</div>
+
+			<div> </div>
+
+		</div>
+		<!-- <div id="projects"></div> -->
 	</div>
 
 	<div class="w3-container">
 		<div id="id01" class="w3-modal">
-			<div class="w3-modal-content">
-				<div class="w3-container alert">
-					<span onclick="document.getElementById('id01').style.display='none'"
-						class="w3-button w3-display-topright">&times;</span>
-					<h2 class="alertheader">State of Vermont Requirements - Members and Guests</h2>
-					<ol>
-						<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
-							documented vaccine
-							completion more than 14 days prior</li>
-						<li>Everyone: Masks must be worn when inside buildings and within 6 feet of others outdoors</li>
-						<li>Everyone: You must sign-in in the pavilion upon entry to the site
-							<ul>
-								<li>Log your name, phone number and temperature in the log just inside the door</li>
-							</ul>
-						</li>
-					</ol>
-					<p color="black">Thank you!</p>
+			<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+				<div>
+					<div class="w3-container alert">
+						<span class="we-button w3-display-topright" onclick="closeModal();"
+							style="background-color: yellow">&times;</span>
+						<h2 class="alertheader">State of Vermont Requirements<br />Members and Guests</h2>
+						<ol>
+							<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
+								documented vaccine
+
+								<div> completion more than 14 days prior</li>
+							<li>Everyone: You must sign-in in the pavilion upon entry to the site
+								<ul>
+
+									<li>Log your name, phone number and temperature in the log just inside the door</li>
+								</ul>
+							</li>
+						</ol>
+
+
+						<div>
+							<p color="black">Thank you!</p>
+							style="color: red;">Note: You need cookies enabled to not see this popup all the time.</p>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script>
-		document.getElementById('id01').style.display = 'block';
-	</script>
+	<footer>
+		<script>
+			checkForModal();
+			// getProjects();
+		</script>
+	</footer>
 </body>
 
 

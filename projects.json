@@ -1,0 +1,70 @@
+{
+    "projects": {
+        "projects": [
+            {
+                "dept": [
+                    "Site"
+                ],
+                "task": "Cut back brush - Around edges of fields and roads",
+                "description": "",
+                "leader": "",
+                "leaderEmail": "",
+                "leaderPhone": "",
+                "goalDate": "(ongoing)",
+                "members": "",
+                "workers": {
+                    "worker": ""
+                },
+                "_id": "2"
+            },
+            {
+                "dept": [
+                    "Site"
+                ],
+                "task": "Remove Brush And Debris From Fields",
+                "description": "Prep fields for mowing",
+                "leader": "",
+                "leaderEmail": "",
+                "leaderPhone": "",
+                "goalDate": "May 1st",
+                "members": "",
+                "workers": {
+                    "worker": ""
+                },
+                "_id": "3"
+            },
+            {
+                "dept": [
+                    "McGregor"
+                ],
+                "task": "McGregor Upkeep",
+                "description": "Many projects are one person projects, but if you're interested in helping on bigger things, please add your name",
+                "leader": "David Tabor",
+                "leaderEmail": "mirrorgrinder@gmail.com",
+                "leaderPhone": "802-431-3723",
+                "goalDate": "(ongoing)",
+                "members": "",
+                "workers": {
+                    "worker": ""
+                },
+                "_id": "4"
+            }
+        ]
+    },
+    "depts": {
+        "dept": [
+            "Site",
+            "Clubhouse",
+            "Porter",
+            "Simoni",
+            "M44",
+            "McGregor",
+            "Breuning",
+            "Bunkhouse",
+            "Fuel",
+            "Tuthill",
+            "Registration",
+            "Pavilion"
+        ]
+    }
+}

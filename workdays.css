@@ -8,6 +8,10 @@ ol {
 p {
 	margin: 1px;
 }
+hr {
+	border-color: green;
+	margin: 0;
+}
 
 #events {
 	padding: 5px;
@@ -23,7 +27,7 @@ p {
 .heading {
 	float:left;
 	background-color:white;
-	border: fuchsia 2px solid;
+	border: gray 2px solid;
 	padding: 8px;
 	margin: 20px 20px 0px 20px;
 	border-radius: 10px;
@@ -39,18 +43,19 @@ p {
 	background-color:white;
 	border: fuchsia 2px solid;
 	padding: 0 8px 0 8px;
-	margin: 20px 20% 0px 20%;
+	/* margin: 20px 20% 0px 20%; */
 	border-radius: 10px;
 	font-weight: bold; 
 	/* color: blue; */
 	text-align:left;
 	/* height: 50px; */
-	width: 60%;
+	/* width: 60%; */
 }
 .alertheader{
 	color: red;
 	text-align: center;
 	margin: 2px;
+	font-weight: bold;
 }
 
 .showName{
@@ -109,11 +114,16 @@ a {
 	text-decoration: none;
 	color: blue;
 	font-family:Arial;
-	font-size: small;
+	font-size: medium;
 	border: fuchsia 1px solid;
 	border-radius: 20px;
 	background-color: Yellow;
 	padding: 3px;
+	font-weight: bold;
+}
+h4 {
+	font-weight: bold;
+	color:midnightblue;
 }
 
 .subtle{
@@ -124,7 +134,7 @@ a {
 	float: none;
 	background-color:white;
 	border: black 1px solid;
-	padding: 20px;
+	padding: 3px;
 	margin: 20px;
 	border-radius: 10px;
 	min-width: 630px;
@@ -143,7 +153,7 @@ th {
 
 .tdTaskName {
 	border-top: #333333 1px solid;
-	border-bottom: fuchsia 1px solid;
+	border-bottom: gray 1px solid;
 	color: dodgerblue;
 	font-size: larger;
 	font-weight: bold;
@@ -153,12 +163,12 @@ th {
 
 .nextDayTitle{
 	color:red;
-	font-size:25px;
+	font-size:20px;
 }
 
 .tdnorm {
 	border-top: #333333 1px solid;
-	border-bottom: fuchsia 1px solid;
+	border-bottom: gray 1px solid;
 	text-align:center;
 	padding-top: 10px;
 }
@@ -177,7 +187,7 @@ th {
 	border-top: #333333 1px solid;
 	font-weight: bold;
 	text-align: center;
-	border-bottom: fuchsia 1px solid;
+	border-bottom: gray 1px solid;
 }
 
 .worker{

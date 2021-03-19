@@ -1,9 +1,56 @@
 <?xml version="1.0"?>
 <projects>
-	
-	
-	
-	
-	
-	
+  <project id="2">
+    <dept>Site</dept>
+    <task>Cut back brush - Around edges of fields and roads</task>
+    <description />
+    <leader />
+    <leaderEmail />
+    <leaderPhone />
+    <goalDate>(ongoing)</goalDate>
+    <members />
+    <workers>
+      <worker />
+    </workers>
+  </project>
+  <project id="3">
+    <dept>Site</dept>
+    <task>Remove Brush And Debris From Fields</task>
+    <description>Prep fields for mowing</description>
+    <leader />
+    <leaderEmail />
+    <leaderPhone />
+    <goalDate>May 1st</goalDate>
+    <members />
+    <workers>
+      <worker />
+    </workers>
+  </project>
+  <project id="4">
+    <dept>McGregor</dept>
+    <task>McGregor Upkeep</task>
+    <description>Many projects are one person projects, but if you're interested in helping on bigger things, please add your name</description>
+    <leader>David Tabor</leader>
+    <leaderEmail>mirrorgrinder@gmail.com</leaderEmail>
+    <leaderPhone>802-431-3723</leaderPhone>
+    <goalDate>(ongoing)</goalDate>
+    <members />
+    <workers>
+      <worker />
+    </workers>
+  </project>
+  <depts>
+    <dept>Site</dept>
+    <dept>Clubhouse</dept>
+    <dept>Porter</dept>
+    <dept>Simoni</dept>
+    <dept>M44</dept>
+    <dept>McGregor</dept>
+    <dept>Breuning</dept>
+    <dept>Bunkhouse</dept>
+    <dept>Fuel</dept>
+    <dept>Tuthill</dept>
+    <dept>Registration</dept>
+    <dept>Pavilion</dept>
+  </depts>
 </projects>
