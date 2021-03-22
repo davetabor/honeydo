@@ -1,0 +1,4 @@
+[15-Mar-2021 17:17:29 America/Boise] PHP Warning:  Use of undefined constant days - assumed 'days' (this will throw an Error in a future version of PHP) in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 4
+[15-Mar-2021 18:32:06 America/Boise] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '{' or '$' in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 72
+[16-Mar-2021 18:39:39 America/Boise] PHP Parse error:  syntax error, unexpected 'alertheader' (T_STRING), expecting ';' or ',' in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 5
+[16-Mar-2021 18:58:03 America/Boise] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 7

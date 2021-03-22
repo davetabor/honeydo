@@ -3,7 +3,7 @@
 	$daysTil = (new DateTime('2021-08-04'))->diff(new DateTime())->days;
 	$weeks = (int)($daysTil/7);
 	echo '<h2 class="alertheader">' . $daysTil . ' days (' . $weeks . ' weeks) until convention</h2>';
-    echo '<table class="wdTable" >';
+    echo '<table class="wdTable">';
     echo "<tr>";
     echo "<th>Task</th>";
     echo "<th>Leader</th>";
@@ -69,3 +69,4 @@
     echo "</table>";
 	echo "</div>";
 	
+?>

@@ -4,85 +4,218 @@
 
 <head>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="workdays.css" media="screen" />
 	<link rel="stylesheet" href="workdays.css" media="handheld" />
 	<link rel="stylesheet" href="workdays-prt.css" media="print" />
-	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
-	<script>
-		function getProjects() {
-			if (window.XMLHttpRequest) {
-				xmlhttp = new XMLHttpRequest();
-			} else {
-				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			xmlhttp.onreadystatechange = function () {
-				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					document.getElementById("projects").innerHTML = xmlhttp.responseText;
-				}
-			}
-			xmlhttp.open("GET", "workdays.php", true);
-			xmlhttp.send();
-			window.scrollTo(0, 0);
-		}
-	</script>
+	<script src="workdays.js"></script>
 </head>
 
-<body onload="getProjects(); return false;">
-	<!-- <div class="alert">
-		<h2 class="alertheader">State of Vermont Requirements - Members and Guests</h2>
-		<ol>
-			<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have documented vaccine
-				completion more than 14 days prior</li>
-			<li>Everyone: Masks must be worn when inside buildings and within 6 feet of others outdoors</li>
-			<li>Everyone: You must sign-in in the pavilion upon entry to the site
-				<ul>
-					<li>Log your name, phone number and temperature in the log just inside the door</li>
-				</ul>
-			</li>
-		</ol>
-		<p color="black">Thank you!</p>
-	</div> -->
+<body>
 	<div class="heading">
-		STM Workday Projects<br />
+		STM Workdays
 	</div>
 	<div class="nextDay	">
 		Workdays 'Official' Schedule: <a href="https://stellafane.org/news#events">Click Here!</a>
-		<div class="nextDayTitle">But, Realistically - Every Saturday!</div>
+		<div class="nextDayTitle"><i>But, Realistically - Every Saturday!</i></div>
 	</div>
 	<div class="clear"></div>
-	<!-- <div style="text-align:center; margin-top: 10px;"> <a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a
-			new task</a></div> -->
+	<div style="text-align:center; margin-top: 10px;"> <a href="mailto:mirrorgrinder@gmail.com">Click here to suggest a
+			new task</a></div style="margin: 10px 3% 10px 3%;">
+
 	<div class="bodyMain">
-		<div id="projects"></div>
+		<div id="col1" class="colDiv">
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Site</h4></a>
+				<!-- <button onclick="alert('Do not press my buttons!'); return false;" style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; position: absolute; top: 0; right: 0;">+</button> -->
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div class="collapsible tdTaskName" style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task1").style.display = "block";'>Remove brush and debris from fields <span style="font-size: .6em;">[more]</span>
+				</div>
+				<div class="content" id="task1">Description</div>
+				<div class="collapsible tdTaskName" style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task1").style.display = "block";'>Clear overhaning brush from boundries and roads <span style="font-size: .6em;">[more]</span>
+				</div>
+				<div class="content" id="task1">
+					<table style="border: 0; font-size: .75em">
+						<tr>
+							<th>Intensity</th>
+							<td>Low</td>
+						</tr>
+						<tr>
+							<th>Members Needed</th>
+							<td>3</td>
+						</tr>
+						<tr>
+							<th>Completion Date</th>
+							<td>April 15th</td>
+						</tr>
+						<tr>
+							<th>Team Lead</th>
+							<td>John Martin</td>
+						</tr>
+						<tr>
+							<th>Volunteers</th>
+							<td>
+								<ul>
+									<li>Member Name 1</li>
+									<li>Member Name 2</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Clubhouse</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task2").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span>
+				</div>
+				<div id="task2" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Porter Turret</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task3").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span>
+				</div>
+				<div id="task3" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Simoni Observatory</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task4").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span>
+				</div>
+				<div id="task4" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">M44</h4></a>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task5").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task5" style="display: none">Description</div>
+			</div>
+		</div>
+		<div id="col2" class="colDiv">
+			<div class="zoneBox">
+				<h4 style="margin: 0;">McGregor Observatory</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task6").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task6" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Breuning Observatory</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task7").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task7" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Bunkhouse</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task8").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task8" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Fuel Shed</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task9").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task9" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Tuthill Towers</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;" onclick='document.getElementBy
+				<div>Id("task10").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task10" style="display: none">Description</div>
+			</div>
+		</div>
+		<div id="col3" class="colDiv">
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Amphitheater</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task11").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task11" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Fruit Stand</h4>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task12").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task12" style="display: none">Description</div>
+			</div>
+			<div class="zoneBox">
+				<h4 style="margin: 0;">Other</h4></a>
+				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task13").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div id="task13" style="display: none">Description</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="w3-container">
 		<div id="id01" class="w3-modal">
-			<div class="w3-modal-content">
-				<div class="w3-container alert">
-					<span onclick="document.getElementById('id01').style.display='none'"
-						class="w3-button w3-display-topright">&times;</span>
-					<h2 class="alertheader">State of Vermont Requirements - Members and Guests</h2>
-					<ol>
-						<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
-							documented vaccine
-							completion more than 14 days prior</li>
-						<li>Everyone: Masks must be worn when inside buildings and within 6 feet of others outdoors</li>
-						<li>Everyone: You must sign-in in the pavilion upon entry to the site
-							<ul>
-								<li>Log your name, phone number and temperature in the log just inside the door</li>
-							</ul>
-						</li>
-					</ol>
-					<p color="black">Thank you!</p>
+			<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+				<div>
+					<div class="w3-container alert">
+						<span class="we-button w3-display-topright" onclick="closeModal();"
+							style="background-color: yellow">&times;</span>
+						<h2 class="alertheader">State of Vermont Requirements<br />Members and Guests</h2>
+						<ol>
+							<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
+								documented vaccine
+
+								<div> completion more than 14 days prior</li>
+							<li>Everyone: You must sign-in in the pavilion upon entry to the site
+								<ul>
+
+									<li>Log your name, phone number and temperature in the log just inside the door</li>
+								</ul>
+							</li>
+						</ol>
+
+
+						<div>
+							<p color="black">Thank you!</p>
+							style="color: red;">Note: You need cookies enabled to not see this popup all the time.</p>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script>
-		document.getElementById('id01').style.display = 'block';
-	</script>
+	<footer>
+		<script>
+			checkForModal();
+			// getProjects();
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
+	</footer>
 </body>
 
 
