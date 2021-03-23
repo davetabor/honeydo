@@ -27,16 +27,17 @@
 
 	<div class="bodyMain">
 		<div id="col1" class="colDiv">
-			<div class="zoneBox">
+			<div id="site" class="zoneBox">
 				<h4 style="margin: 0;">Site</h4></a>
 				<!-- <button onclick="alert('Do not press my buttons!'); return false;" style="font: Arial bold large; border: 1px solid red; background-color: neon; width:20px; text-align: center; position: absolute; top: 0; right: 0;">+</button> -->
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
-				<div class="collapsible tdTaskName" style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task1").style.display = "block";'>Remove brush and debris from fields <span style="font-size: .6em;">[more]</span>
+				<!-- <div class="collapsible tdTaskName" onclick='document.getElementById("task1").style.display = "block";'>
+					Remove brush and debris from fields <span style="font-size: .6em;">[more]</span>
 				</div>
 				<div class="content" id="task1">Description</div>
 				<div class="collapsible tdTaskName" style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task1").style.display = "block";'>Clear overhaning brush from boundries and roads <span style="font-size: .6em;">[more]</span>
+					onclick='document.getElementById("task1").style.display = "block";'>
+					Clear overhaning brush from boundries and roads <span style="font-size: .6em;">[more]</span>
 				</div>
 				<div class="content" id="task1">
 					<table style="border: 0; font-size: .75em">
@@ -66,97 +67,109 @@
 							</td>
 						</tr>
 					</table>
-				</div>
+				</div> -->
 			</div>
-			<div class="zoneBox">
+			<div id="clubhouse" class="zoneBox">
 				<h4 style="margin: 0;">Clubhouse</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task2").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span>
+					onclick='document.getElementById("task2").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span>
 				</div>
 				<div id="task2" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="porter" class="zoneBox">
 				<h4 style="margin: 0;">Porter Turret</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task3").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span>
+					onclick='document.getElementById("task3").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span>
 				</div>
 				<div id="task3" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="simoni" class="zoneBox">
 				<h4 style="margin: 0;">Simoni Observatory</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task4").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span>
+					onclick='document.getElementById("task4").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span>
 				</div>
 				<div id="task4" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="m44" class="zoneBox">
 				<h4 style="margin: 0;">M44</h4></a>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task5").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task5").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task5" style="display: none">Description</div>
 			</div>
 		</div>
 		<div id="col2" class="colDiv">
-			<div class="zoneBox">
+			<div id="mcgregor" class="zoneBox">
 				<h4 style="margin: 0;">McGregor Observatory</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task6").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task6").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task6" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="breuning" class="zoneBox">
 				<h4 style="margin: 0;">Breuning Observatory</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task7").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task7").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task7" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="bunkhouse" class="zoneBox">
 				<h4 style="margin: 0;">Bunkhouse</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task8").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task8").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task8" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="fuel" class="zoneBox">
 				<h4 style="margin: 0;">Fuel Shed</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task9").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task9").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task9" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="tuthill" class="zoneBox">
 				<h4 style="margin: 0;">Tuthill Towers</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
-				<div style="width: 100%; overflow: hidden;" onclick='document.getElementBy
-				<div>Id("task10").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+				<div style="width: 100%; overflow: hidden;"
+					onclick='document.getElementById("task10").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task10" style="display: none">Description</div>
 			</div>
 		</div>
 		<div id="col3" class="colDiv">
-			<div class="zoneBox">
+			<div id="amphitheater" class="zoneBox">
 				<h4 style="margin: 0;">Amphitheater</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task11").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task11").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task11" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="fruit" class="zoneBox">
 				<h4 style="margin: 0;">Fruit Stand</h4>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task12").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task12").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task12" style="display: none">Description</div>
 			</div>
-			<div class="zoneBox">
+			<div id="other" class="zoneBox">
 				<h4 style="margin: 0;">Other</h4></a>
 				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
 				<div style="width: 100%; overflow: hidden;"
-					onclick='document.getElementById("task13").style.display = "block";'>Task One <span style="font-size: .6em;">[more]</span></div>
+					onclick='document.getElementById("task13").style.display = "block";'>Task One <span
+						style="font-size: .6em;">[more]</span></div>
 				<div id="task13" style="display: none">Description</div>
 			</div>
 		</div>
@@ -175,7 +188,8 @@
 							<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
 								documented vaccine
 
-								<div> completion more than 14 days prior</li>
+								<div> completion more than 14 days prior
+							</li>
 							<li>Everyone: You must sign-in in the pavilion upon entry to the site
 								<ul>
 
@@ -199,21 +213,8 @@
 	<footer>
 		<script>
 			checkForModal();
-			// getProjects();
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-				coll[i].addEventListener("click", function () {
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
-					if (content.style.maxHeight) {
-						content.style.maxHeight = null;
-					} else {
-						content.style.maxHeight = content.scrollHeight + "px";
-					}
-				});
-			}
+			getProjects();
+			// addListeners();
 		</script>
 	</footer>
 </body>
