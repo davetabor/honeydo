@@ -18,64 +18,136 @@ var getProjects = function () {
 
 var buildTasks = function (jsonData) {
 
-  for (var j = 0; j < jsonData.projects.length; j++) {
+  for (var j = 0; j < jsonData.length; j++) {
     counter++;
-    var guts = jsonData.projects[j];
-    console.log("j=" + j + ": ");
-    console.log(guts);
-    var task = guts.task;
-    var dept = guts.dept;
-    console.log(dept);
-    var description = guts.description;
-    var leader = guts.leader;
-    var goalDate = guts.goalDate;
-    var members = guts.members;
-    var taskBox = document.getElementById(dept);
+    var guts = jsonData[j];
+    if (guts.task != "" && guts.task != null) {
+      console.log("j=" + j + ": ");
+      console.log(guts);
+      var task = guts.task;
+      var dept = guts.dept;
+      console.log(dept);
+      var description = guts.description;
+      var leader = guts.leader;
+      var goalDate = guts.goalDate;
+      var members = guts.members;
+      var taskBox = document.getElementById(dept);
 
-    var newTask = document.createElement('div');
-    newTask.id = "task" + counter;
-    newTask.classList.add("collapsible");
-    newTask.classList.add("tdTaskName");
-    newTask.onclick = 'document.getElementById("taskContent").style.maxHeight = "100%"';
-    var innerTxt = '<span class="bottomLeftText">' + task + '</span> <span class="bottomRightText" style=\"font-size: .6em;\">[more]</span>';
-    newTask.innerHTML = innerTxt;
+      var newTask = document.createElement('div');
+      newTask.id = "task" + counter;
+      newTask.classList.add("collapsible");
+      newTask.classList.add("tdTaskName");
+      newTask.onclick = 'document.getElementById("taskContent").style.maxHeight = "100%"';
+      var innerTxt = '<span class="bottomLeftText">' + task + '</span> <span class="bottomRightText" style=\"font-size: .6em;\">[more]</span>';
+      newTask.innerHTML = innerTxt;
 
-    taskBox.appendChild(newTask);
+      taskBox.appendChild(newTask);
 
-    var newContent = document.createElement('div');
-    newContent.classList.add("content");
-    newContent.id = "taskContent" + counter;
-    innerTxt = '<table style=\"border: 0; font-size: .75em\">';
-    innerTxt = innerTxt + '<tr>';
-    innerTxt = innerTxt + '<th>Description</th>';
-    innerTxt = innerTxt + '<td>' + description + '</td>';
-    innerTxt = innerTxt + '</tr><tr>';
-    innerTxt = innerTxt + '<th>Intensity</th>';
-    innerTxt = innerTxt + '<td>--</td>';
-    innerTxt = innerTxt + '</tr><tr>';
-    innerTxt = innerTxt + '<th>Members Needed</th>';
-    innerTxt = innerTxt + '<td>' + members + '</td>';
-    innerTxt = innerTxt + '</tr><tr>';
-    innerTxt = innerTxt + '<th>Completion Date</th>';
-    innerTxt = innerTxt + '<td>' + goalDate + '</td>';
-    innerTxt = innerTxt + '</tr><tr>';
-    innerTxt = innerTxt + '<th>Team Lead</th>';
-    innerTxt = innerTxt + '<td>' + leader + '</td>';
-    innerTxt = innerTxt + '</tr><tr>';
-    innerTxt = innerTxt + '<th>Volunteers</th>';
-    innerTxt = innerTxt + '<td><ul>';
-    innerTxt = innerTxt + '<li>Member Name 1</li>';
-    innerTxt = innerTxt + '<li>Member Name 2</li>';
-    innerTxt = innerTxt + '</ul></td></tr></table></div>';
-    newContent.innerHTML = innerTxt;
-    // taskBox.appendChild(newTask);
-    taskBox.appendChild(newContent);
+      var newContent = document.createElement('div');
+      newContent.classList.add("content");
+      newContent.id = "taskContent" + counter;
+      innerTxt = '<table style=\"border: 0; font-size: .75em\">';
+      innerTxt = innerTxt + '<tr>';
+      innerTxt = innerTxt + '<th>Description</th>';
+      innerTxt = innerTxt + '<td>' + description + '</td>';
+      innerTxt = innerTxt + '</tr><tr>';
+      innerTxt = innerTxt + '<th>Intensity</th>';
+      innerTxt = innerTxt + '<td>--</td>';
+      innerTxt = innerTxt + '</tr><tr>';
+      innerTxt = innerTxt + '<th>Members Needed</th>';
+      innerTxt = innerTxt + '<td>' + members + '</td>';
+      innerTxt = innerTxt + '</tr><tr>';
+      innerTxt = innerTxt + '<th>Completion Date</th>';
+      innerTxt = innerTxt + '<td>' + goalDate + '</td>';
+      innerTxt = innerTxt + '</tr><tr>';
+      innerTxt = innerTxt + '<th>Team Lead</th>';
+      innerTxt = innerTxt + '<td>' + leader + '</td>';
+      innerTxt = innerTxt + '</tr><tr>';
+      innerTxt = innerTxt + '<th>Volunteers</th>';
+      innerTxt = innerTxt + '<td><ul>';
+      if (guts.workers != null && guts.workers != []) {
+        for (var m = 0; m < guts.workers.length; m++) {
+          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <input type=\"button\" onclick=\"removeMe(' + task + ', ' + guts.workers[m] + ');\" value="X"></li>';
+          // innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <input type=\"button\" onclick=\"removeMe("duh","yup");\" value="X"></li>';
+        }
+      }
+      var textID = "name" + j;
+      innerTxt = innerTxt + '<li><input type=\"text\" id=\"' + textID + '\" placeholder=\"Your Name\"><input type=\"button\" onclick=\'addMe(\"' + task + '\", \"' + textID + '\");\' value=\"Go\"></li>';
+      // innerTxt = innerTxt + '<li><input type=\"text\" id=\"' + textID + '\" placeholder=\"Your Name\"><input type=\"button\" onclick=\'addMe("huh","yup").val())\' value=\"Go\"></li>';
+      innerTxt = innerTxt + '</ul></td></tr></table></div>';
+      newContent.innerHTML = innerTxt;
+      // taskBox.appendChild(newTask);
+      taskBox.appendChild(newContent);
+    }
   }
   addListeners();
 }
 
-var addTasks = function (loc) {
-  var location = getLocation(loc);
+var addTasks = function () {
+  $(function () {
+    var dialog = $("#dialog-form");
+    var task = $("#task").val();
+    var desc = $("#desc").val();
+    var goal = $("#goalDate").val();
+    var leader = $("#leader").val();
+    var loc = $("#location").val();
+    if (loc == "" || loc == null) {
+      loc = "other";
+    }
+    var members = $("#members").val();
+    $("#dialog-form").dialog("close");
+    appendTask(task, desc, goal, leader, loc, members);
+  });
+}
+
+var addMe = function (task, textID) {
+  var name = $("#" + textID).val();
+  if (name != "" && name != null) {
+    for (var j = 0; j < jsonData.length; j++) {
+      guts = jsonData[j];
+      if (guts.task == task) {
+        if (guts.workers == null) {
+          guts.workers = [];
+          guts.workers[0] = name;
+        } else {
+          var ctr = guts.workers.length;
+          guts.workers[ctr] = name;
+        }
+      }
+    }
+    alert(JSON.stringify(jsonData));
+    saveJSON();
+  }
+}
+
+var appendTask = function (task, desc, goal, leader, loc, members) {
+  console.log("||| INPUTS: " + task + " - " + desc + " - " + goal + " - " + leader + " - " + loc + " - " + members + "||||");
+  var newData = {
+    "task": task,
+    "description": desc,
+    "dept": loc,
+    "leader": leader,
+    "goalDate": goal,
+    "members": members
+  };
+  console.log("newData: ");
+  console.log(newData);
+  console.log("jsonData: ")
+  jsonData.push(newData);
+  saveJSON();
+}
+
+function saveJSON() {
+  $.ajax({
+    type: "POST",
+    url: "saveJSON.php",
+    data: { "jsonDTA": jsonData },
+    success: function (result) {
+      console.log(result);
+      location.reload();
+    },
+    error: function (xhr, status, error) { alert("This didn't work: " + error); }
+  });
 }
 
 var getLocation = function (loc) {

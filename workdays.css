@@ -4,9 +4,20 @@
 	width: 880px;
 	margin: auto;
 }
+label {
+	font-weight: bold;
+	color: navy;
+}
 
-ol {
-	margin: 2px;
+ul {
+	/* margin: 2px; */
+	padding: 2px;
+	list-style-type: none;
+}
+input{
+	padding: 0;
+	margin: 0;
+	float: left;
 }
 
 p {
@@ -267,7 +278,7 @@ th {
 	cursor: pointer;
 	padding: 0 5px;
 	width: 100%;
-	border: blue 1px solid;
+	border: fuchsia 1px solid;
 	text-align: left;
 	outline: none;
 	font-size: 15px;

@@ -7,10 +7,157 @@
 	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<style>
+		label,
+		input {
+			display: block;
+		}
+
+		input.text {
+			margin-bottom: 12px;
+			width: 95%;
+			padding: .4em;
+		}
+
+		fieldset {
+			padding: 0;
+			border: 0;
+			margin-top: 25px;
+		}
+
+		h1 {
+			font-size: 1.2em;
+			margin: .6em 0;
+		}
+
+		div#users-contain {
+			width: 350px;
+			margin: 20px 0;
+		}
+
+		div#users-contain table {
+			margin: 1em 0;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		div#users-contain table td,
+		div#users-contain table th {
+			border: 1px solid #eee;
+			padding: .6em 10px;
+			text-align: left;
+		}
+
+		.ui-dialog .ui-state-error {
+			padding: .3em;
+		}
+
+		.validateTips {
+			border: 1px solid transparent;
+			padding: 0.3em;
+		}
+	</style>
 	<link rel="stylesheet" href="workdays.css" media="screen" />
 	<link rel="stylesheet" href="workdays.css" media="handheld" />
 	<link rel="stylesheet" href="workdays-prt.css" media="print" />
 	<script src="workdays.js"></script>
+	<script>
+		$(function () {
+			var dialog, form,
+
+				// From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
+				emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+				task = $("#task"),
+				desc = $("#desc"),
+				goalDate = $("#goalDate"),
+				leader = $("#leader"),
+				members = $("#members");
+				// allFields = $([]).add(name).add(email).add(password),
+				// tips = $(".validateTips");
+
+			function updateTips(t) {
+				tips
+					.text(t)
+					.addClass("ui-state-highlight");
+				setTimeout(function () {
+					tips.removeClass("ui-state-highlight", 1500);
+				}, 500);
+			}
+
+			function checkLength(o, n, min, max) {
+				if (o.val().length > max || o.val().length < min) {
+					o.addClass("ui-state-error");
+					// updateTips("Length of " + n + " must be between " +
+						// min + " and " + max + ".");
+					return false;
+				} else {
+					return true;
+				}
+			}
+
+			function checkRegexp(o, regexp, n) {
+				if (!(regexp.test(o.val()))) {
+					o.addClass("ui-state-error");
+					// updateTips(n);
+					return false;
+				} else {
+					return true;
+				}
+			}
+
+			function addUser() {
+				var valid = true;
+				// allFields.removeClass("ui-state-error");
+
+				// valid = valid && checkLength(name, "username", 3, 16);
+				// valid = valid && checkLength(email, "email", 6, 80);
+				// valid = valid && checkLength(password, "password", 5, 16);
+
+				// valid = valid && checkRegexp(name, /^[a-z]([0-9a-z_\s])+$/i, "Username may consist of a-z, 0-9, underscores, spaces and must begin with a letter.");
+				// valid = valid && checkRegexp(email, emailRegex, "eg. ui@jquery.com");
+				// valid = valid && checkRegexp(password, /^([0-9a-zA-Z])+$/, "Password field only allow : a-z 0-9");
+
+				// if (valid) {
+					// $("#users tbody").append("<tr>" +
+						// "<td>" + name.val() + "</td>" +
+						// "<td>" + email.val() + "</td>" +
+						// "<td>" + password.val() + "</td>" +
+						// "</tr>");
+					dialog.dialog("close");
+				// }
+				return valid;
+			}
+
+			dialog = $("#dialog-form").dialog({
+				autoOpen: false,
+				height: 600,
+				width: 350,
+				modal: true,
+				buttons: {
+					"Add Task": addTasks,
+					Cancel: function () {
+						dialog.dialog("close");
+					}
+				},
+				close: function () {
+					form[0].reset();
+					// allFields.removeClass("ui-state-error");
+				}
+			});
+
+			form = dialog.find("form").on("submit", function (event) {
+				event.preventDefault();
+				addUser();
+			});
+
+			$("#create-user").button().on("click", function () {
+				dialog.dialog("open");
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -22,33 +169,36 @@
 		<div class="nextDayTitle"><i>But, Realistically - Every Saturday!</i></div>
 	</div>
 	<div class="clear"></div>
+	<div style="text-align: center;">
+	<button id="create-user">Add a new task</button>
+	</div>
 
 	<div class="bodyMain">
 		<div id="col1" class="colDiv">
 
 			<div id="site" class="zoneBox">
 				<h4 style="margin: 0;">Site</h4></a>
-				<div class="addBtn" onclick="addTask('site'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('site'); return false;">Add</div> -->
 			</div>
 
 			<div id="clubhouse" class="zoneBox">
 				<h4 style="margin: 0;">Clubhouse</h4>
-				<div class="addBtn" onclick="addTask('clubhouse'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('clubhouse'); return false;">Add</div> -->
 			</div>
 
 			<div id="porter" class="zoneBox">
 				<h4 style="margin: 0;">Porter Turret</h4>
-				<div class="addBtn" onclick="addTask('porter'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('porter'); return false;">Add</div> -->
 			</div>
 
 			<div id="simoni" class="zoneBox">
 				<h4 style="margin: 0;">Simoni Observatory</h4>
-				<div class="addBtn" onclick="addTask('simoni'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('simoni'); return false;">Add</div> -->
 			</div>
 
 			<div id="m44" class="zoneBox">
 				<h4 style="margin: 0;">M44</h4></a>
-				<div class="addBtn" onclick="addTask('m44'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('m44'); return false;">Add</div> -->
 			</div>
 
 		</div>
@@ -56,27 +206,27 @@
 
 			<div id="mcgregor" class="zoneBox">
 				<h4 style="margin: 0;">McGregor Observatory</h4>
-				<div class="addBtn" onclick="addTask('mcgregor'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('mcgregor'); return false;">Add</div> -->
 			</div>
 
 			<div id="breuning" class="zoneBox">
 				<h4 style="margin: 0;">Breuning Observatory</h4>
-				<div class="addBtn" onclick="addTask('breuning'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('breuning'); return false;">Add</div> -->
 			</div>
 
 			<div id="bunkhouse" class="zoneBox">
 				<h4 style="margin: 0;">Bunkhouse</h4>
-				<div class="addBtn" onclick="addTask('bunkhouse'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('bunkhouse'); return false;">Add</div> -->
 			</div>
 
 			<div id="fuel" class="zoneBox">
 				<h4 style="margin: 0;">Fuel Shed</h4>
-				<div class="addBtn" onclick="addTask('fuel'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('fuel'); return false;">Add</div> -->
 			</div>
 
 			<div id="tuthill" class="zoneBox">
 				<h4 style="margin: 0;">Tuthill Towers</h4>
-				<div class="addBtn" onclick="addTask('tuthill'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('tuthill'); return false;">Add</div> -->
 			</div>
 
 		</div>
@@ -84,20 +234,63 @@
 
 			<div id="amphitheater" class="zoneBox">
 				<h4 style="margin: 0;">Amphitheater</h4>
-				<div class="addBtn" onclick="addTask('amphitheater'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('amphitheater'); return false;">Add</div> -->
 			</div>
 
 			<div id="fruit" class="zoneBox">
 				<h4 style="margin: 0;">Fruit Stand</h4>
-				<div class="addBtn" onclick="addTask('fruit'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('fruit'); return false;">Add</div> -->
 			</div>
 
 			<div id="other" class="zoneBox">
 				<h4 style="margin: 0;">Other</h4></a>
-				<div class="addBtn" onclick="addTask('other'); return false;">Add</div>
+				<!-- <div class="addBtn" onclick="addTasks('other'); return false;">Add</div> -->
 			</div>
 
 		</div>
+	</div>
+
+	<div id="dialog-form" title="Add A New Task">
+		<!-- <p class="validateTips">All form fields are required.</p> -->
+
+		<form>
+			<fieldset>
+				<label>Work Area</label>
+				<select id="location" name="location">
+					<option value="site">Site</option>
+					<option value="clubhouse">Clubhouse</option>
+					<option value="porter">Porter Turret</option>
+					<option value="simoni">Simoni Observatory</option>
+					<option value="m44">M44</option>
+					<option value="mcgregor">McGregor</option>
+					<option value="breuning">Breuning</option>
+					<option value="bunkhouse">Bunkhouse</option>
+					<option value="fuel">Fuel Shed</option>
+					<option value="tuthill">Tuthill Towers</option>
+					<option value="amphitheater">Amphitheater</option>
+					<option value="fruit">Fruit Stand</option>
+					<option value="other">Other</option>
+				</select>
+				<label for="task">Task Title</label>
+				<input type="text" name="task" id="task" value="" placeholder="Task Title"
+					class="text ui-widget-content ui-corner-all">
+				<label for="desc">Description</label>
+				<input type="text" name="desc" id="desc" value="" placeholder="Description"
+					class="text ui-widget-content ui-corner-all">
+				<label for="goalDate">Goal Date</label>
+				<input name="goalDate" id="goalDate" value="" placeholder="Goal"
+					class="text ui-widget-content ui-corner-all">
+				<label for="leader">Leader</label>
+				<input name="leader" id="leader" value="" placeholder="Leader"
+					class="text ui-widget-content ui-corner-all">
+				<label for="members">Members Needed</label>
+				<input name="members" id="members" value="" placeholder="# of Members Needed"
+					class="text ui-widget-content ui-corner-all">
+
+				<!-- Allow form submission with keyboard without duplicating the dialog button -->
+				<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+			</fieldset>
+		</form>
 	</div>
 
 	<div class="w3-container">
@@ -137,6 +330,7 @@
 
 	<footer>
 		<script>
+			$("#dialog").dialog();
 			checkForModal();
 			getProjects();
 			// addListeners();
