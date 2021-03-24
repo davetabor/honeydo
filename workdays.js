@@ -67,16 +67,14 @@ var buildTasks = function (jsonData) {
       innerTxt = innerTxt + '<td><ul>';
       if (guts.workers != null && guts.workers != []) {
         for (var m = 0; m < guts.workers.length; m++) {
-          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <input type=\"button\" onclick=\"removeMe(' + task + ', ' + guts.workers[m] + ');\" value="X"></li>';
-          // innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <input type=\"button\" onclick=\"removeMe("duh","yup");\" value="X"></li>';
+          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <input type=\"button\" onclick=\'removeMe(\"' + task + '\", \"' + guts.workers[m] + '\");\' value="X"></li>';
         }
       }
       var textID = "name" + j;
       innerTxt = innerTxt + '<li><input type=\"text\" id=\"' + textID + '\" placeholder=\"Your Name\"><input type=\"button\" onclick=\'addMe(\"' + task + '\", \"' + textID + '\");\' value=\"Go\"></li>';
-      // innerTxt = innerTxt + '<li><input type=\"text\" id=\"' + textID + '\" placeholder=\"Your Name\"><input type=\"button\" onclick=\'addMe("huh","yup").val())\' value=\"Go\"></li>';
       innerTxt = innerTxt + '</ul></td></tr></table></div>';
       newContent.innerHTML = innerTxt;
-      // taskBox.appendChild(newTask);
+
       taskBox.appendChild(newContent);
     }
   }
@@ -120,8 +118,28 @@ var addMe = function (task, textID) {
   }
 }
 
+var removeMe = function (task, textID) {
+  // var name = $("#" + textID).val();
+  // if (name != "" && name != null) {
+  //   for (var j = 0; j < jsonData.length; j++) {
+  //     guts = jsonData[j];
+  //     if (guts.task == task) {
+  //       if (guts.workers == null) {
+  //         guts.workers = [];
+  //         guts.workers[0] = name;
+  //       } else {
+  //         var ctr = guts.workers.length;
+  //         guts.workers[ctr] = name;
+  //       }
+  //     }
+  //   }
+  //   alert(JSON.stringify(jsonData));
+  //   saveJSON();
+  // }
+}
+
 var appendTask = function (task, desc, goal, leader, loc, members) {
-  console.log("||| INPUTS: " + task + " - " + desc + " - " + goal + " - " + leader + " - " + loc + " - " + members + "||||");
+  console.log("--- INPUTS: " + task + " - " + desc + " - " + goal + " - " + leader + " - " + loc + " - " + members + " ---");
   var newData = {
     "task": task,
     "description": desc,
@@ -137,16 +155,20 @@ var appendTask = function (task, desc, goal, leader, loc, members) {
   saveJSON();
 }
 
-function saveJSON() {
+var saveJSON = function () {
   $.ajax({
     type: "POST",
     url: "saveJSON.php",
-    data: { "jsonDTA": jsonData },
+    data: {
+      "jsonDTA": jsonData
+    },
     success: function (result) {
       console.log(result);
       location.reload();
     },
-    error: function (xhr, status, error) { alert("This didn't work: " + error); }
+    error: function (xhr, status, error) {
+      alert("This didn't work: " + error);
+    }
   });
 }
 
