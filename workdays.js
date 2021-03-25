@@ -1,6 +1,24 @@
 var jsonData = "";
 var counter = 0;
 
+
+var checkForDeletions = function (myCallback) {
+  var params = new URLSearchParams(location.search);
+  var delItem = params.get('delete');
+  // alert("delItem read: " + delItem);
+  if (delItem != null && delItem != "") {
+    console.log("delItem: " + delItem);
+    var d = parseInt(delItem);
+    console.log("delItem: " + d);
+    alert("delItem: " + d);
+    // alert(jsonData[delItem].task);
+    delete jsonData[d];
+    // alert(jsonData[delItem].task);
+    alert(jsonData);
+    
+    myCallback();
+  }
+}
 var getProjects = function () {
   $.ajax({
     url: 'https://stellafane.org/stm_members/workdays/php/getProjects.php',
@@ -31,28 +49,38 @@ var buildTasks = function (jsonData) {
       var leader = guts.leader;
       var goalDate = guts.goalDate;
       var members = guts.members;
+      console.log("guts.complete: " + guts.complete);
+      var complete = guts.complete;
       var taskBox = document.getElementById(dept);
 
       var newTask = document.createElement('div');
       newTask.id = "task" + counter;
       newTask.classList.add("collapsible");
       newTask.classList.add("tdTaskName");
+      console.log("complete: " + complete);
+      if (complete == "true") { newTask.classList.add("complete") };
       newTask.onclick = 'document.getElementById("taskContent").style.maxHeight = "100%"';
-      var innerTxt = '<span class="bottomLeftText">' + task + '</span> <span class="bottomRightText" style=\"font-size: .6em;\">[more]</span>';
+      var innerTxt = "";
+      if (complete == "true") {
+        innerTxt = innerTxt + "<h4 style=\"color: red; text-align: right;\">COMPLETE</h4>";
+        innerTxt = innerTxt + '<span class="bottomLeftText complete">'
+      } else {
+        innerTxt = '<span class="bottomLeftText">'
+      }
+      innerTxt = innerTxt + j + ": " + task + '</span> <span class="bottomRightText" style=\"font-size: .6em;\">[more]</span>';
       newTask.innerHTML = innerTxt;
 
       taskBox.appendChild(newTask);
 
       var newContent = document.createElement('div');
       newContent.classList.add("content");
+      innerTxt = "";
+      if (complete == "true") { innerTxt = innerTxt + "<h4 style=\"color: red;\">COMPLETE</h4>"; };
       newContent.id = "taskContent" + counter;
-      innerTxt = '<table style=\"border: 0; font-size: .75em\">';
+      innerTxt = innerTxt + '<table style=\"border: 0; font-size: .75em\">';
       innerTxt = innerTxt + '<tr>';
       innerTxt = innerTxt + '<th>Description</th>';
       innerTxt = innerTxt + '<td>' + description + '</td>';
-      innerTxt = innerTxt + '</tr><tr>';
-      innerTxt = innerTxt + '<th>Intensity</th>';
-      innerTxt = innerTxt + '<td>--</td>';
       innerTxt = innerTxt + '</tr><tr>';
       innerTxt = innerTxt + '<th>Members Needed</th>';
       innerTxt = innerTxt + '<td>' + members + '</td>';
@@ -67,12 +95,19 @@ var buildTasks = function (jsonData) {
       innerTxt = innerTxt + '<td><ul>';
       if (guts.workers != null && guts.workers != []) {
         for (var m = 0; m < guts.workers.length; m++) {
-          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <input type=\"button\" onclick=\'removeMe(\"' + task + '\", \"' + guts.workers[m] + '\");\' value="X"></li>';
+          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <button onclick=\'removeMe(\"' + task + '\", \"' + guts.workers[m] + '\");\'>X</button></li>';
         }
       }
       var textID = "name" + j;
       innerTxt = innerTxt + '<li><input type=\"text\" id=\"' + textID + '\" placeholder=\"Your Name\"><input type=\"button\" onclick=\'addMe(\"' + task + '\", \"' + textID + '\");\' value=\"Go\"></li>';
-      innerTxt = innerTxt + '</ul></td></tr></table></div>';
+      innerTxt = innerTxt + '</ul></td></tr></table>';
+      innerTxt = innerTxt + '<button onclick=\'markComplete(\"' + task + '\")\' class=\"bottomRightText\" style=\"font-size: .65em; font-weight: bold; padding: 0;\">';
+      if (complete == "true") {
+        innerTxt = innerTxt + 'Mark Active'
+      } else {
+        innerTxt = innerTxt + 'Mark Complete'
+      }
+      innerTxt = innerTxt + '</button>';
       newContent.innerHTML = innerTxt;
 
       taskBox.appendChild(newContent);
@@ -100,11 +135,12 @@ var addTasks = function () {
 
 var addMe = function (task, textID) {
   var name = $("#" + textID).val();
+  alert("task: " + task + ", textID: " + textID + ", name: " + name);
   if (name != "" && name != null) {
     for (var j = 0; j < jsonData.length; j++) {
       guts = jsonData[j];
       if (guts.task == task) {
-        if (guts.workers == null) {
+        if (guts.workers == null || guts.workers == "") {
           guts.workers = [];
           guts.workers[0] = name;
         } else {
@@ -113,29 +149,45 @@ var addMe = function (task, textID) {
         }
       }
     }
-    alert(JSON.stringify(jsonData));
     saveJSON();
   }
 }
 
-var removeMe = function (task, textID) {
+var markComplete = function (task) {
+  if (task != "" && task != null) {
+    for (var j = 0; j < jsonData.length; j++) {
+      guts = jsonData[j];
+      if (guts.task == task) {
+        if (guts.complete == null || guts.complete == "false") {
+          guts.complete = true;
+        } else {
+          guts.complete = false;
+        }
+      }
+    }
+    saveJSON();
+  }
+}
+
+var removeMe = function (task, name) {
+  console.log("removeMe Started... " + task + ", " + name);
   // var name = $("#" + textID).val();
-  // if (name != "" && name != null) {
-  //   for (var j = 0; j < jsonData.length; j++) {
-  //     guts = jsonData[j];
-  //     if (guts.task == task) {
-  //       if (guts.workers == null) {
-  //         guts.workers = [];
-  //         guts.workers[0] = name;
-  //       } else {
-  //         var ctr = guts.workers.length;
-  //         guts.workers[ctr] = name;
-  //       }
-  //     }
-  //   }
-  //   alert(JSON.stringify(jsonData));
-  //   saveJSON();
-  // }
+  if (name != "" && name != null) {
+    for (var j = 0; j < jsonData.length; j++) {
+      guts = jsonData[j];
+      console.log("trying record" + j);
+      if (guts.task == task) {
+        console.log("Record detected...");
+        for (var w = 0; w < guts.workers.length; w++) {
+          if (guts.workers[w] == name) {
+            delete guts.workers[w];
+            console.log("Found It!!");
+            saveJSON();
+          }
+        }
+      }
+    }
+  }
 }
 
 var appendTask = function (task, desc, goal, leader, loc, members) {
@@ -164,7 +216,9 @@ var saveJSON = function () {
     },
     success: function (result) {
       console.log(result);
-      location.reload();
+      var url = window.location.href;
+      url = url.split('?')[0];
+      window.location = url;
     },
     error: function (xhr, status, error) {
       alert("This didn't work: " + error);
@@ -223,14 +277,15 @@ var addListeners = function () {
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    console.log(coll[i]);
+    // console.log(coll[i]);
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        // content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = "100%";
       }
     });
   }
@@ -292,3 +347,5 @@ var deleteCookie = function () {
 //   xmlhttp.send();
 //   window.scrollTo(0, 0);
 // }
+
+checkForDeletions(saveJSON);
