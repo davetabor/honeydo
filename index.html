@@ -10,133 +10,10 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<style>
-		label,
-		input {
-			display: block;
-		}
-
-		input.text {
-			margin-bottom: 12px;
-			width: 95%;
-			padding: .4em;
-		}
-
-		fieldset {
-			padding: 0;
-			border: 0;
-			margin-top: 25px;
-		}
-
-		h1 {
-			font-size: 1.2em;
-			margin: .6em 0;
-		}
-
-		div#users-contain {
-			width: 350px;
-			margin: 20px 0;
-		}
-
-		div#users-contain table {
-			margin: 1em 0;
-			border-collapse: collapse;
-			width: 100%;
-		}
-
-		div#users-contain table td,
-		div#users-contain table th {
-			border: 1px solid #eee;
-			padding: .6em 10px;
-			text-align: left;
-		}
-
-		.ui-dialog .ui-state-error {
-			padding: .3em;
-		}
-
-		.validateTips {
-			border: 1px solid transparent;
-			padding: 0.3em;
-		}
-	</style>
 	<link rel="stylesheet" href="workdays.css" media="screen" />
 	<link rel="stylesheet" href="workdays.css" media="handheld" />
 	<link rel="stylesheet" href="workdays.css" media="print" />
 	<script src="workdays.js"></script>
-	<script>
-		$(function () {
-			var dialog, form,
-
-				emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-				site = $("#site"),
-				task = $("#task"),
-				desc = $("#desc"),
-				goalDate = $("#goalDate"),
-				leader = $("#leader"),
-				members = $("#members");
-
-			function updateTips(t) {
-				tips
-					.text(t)
-					.addClass("ui-state-highlight");
-				setTimeout(function () {
-					tips.removeClass("ui-state-highlight", 1500);
-				}, 500);
-			}
-
-			function checkLength(o, n, min, max) {
-				if (o.val().length > max || o.val().length < min) {
-					o.addClass("ui-state-error");
-					// updateTips("Length of " + n + " must be between " +
-						// min + " and " + max + ".");
-					return false;
-				} else {
-					return true;
-				}
-			}
-
-			function checkRegexp(o, regexp, n) {
-				if (!(regexp.test(o.val()))) {
-					o.addClass("ui-state-error");
-					return false;
-				} else {
-					return true;
-				}
-			}
-
-			function addUser() {
-				var valid = true;
-					dialog.dialog("close");
-				return valid;
-			}
-
-			dialog = $("#dialog-form").dialog({
-				autoOpen: false,
-				height: 600,
-				width: 350,
-				modal: true,
-				buttons: {
-					"Add Task": addTasks,
-					Cancel: function () {
-						dialog.dialog("close");
-					}
-				},
-				close: function () {
-					form[0].reset();
-				}
-			});
-
-			form = dialog.find("form").on("submit", function (event) {
-				event.preventDefault();
-				addUser();
-			});
-
-			$("#create-user").button().on("click", function () {
-				dialog.dialog("open");
-			});
-		});
-	</script>
 </head>
 
 <body>
@@ -152,81 +29,68 @@
 	<button id="create-user">Add a new task</button>
 	</div>
 
-	<div class="bodyMain">
-		<div id="col1" class="colDiv">
+	<div class="flex-container bodyMain">
+		<!-- <div id="col1" class="colDiv"> -->
 
-			<div id="site" class="zoneBox">
+			<div id="site" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Site</h4></a>
-				<!-- <div class="addBtn" onclick="addTasks('site'); return false;">Add</div> -->
 			</div>
 
-			<div id="clubhouse" class="zoneBox">
+			<div id="clubhouse" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Clubhouse</h4>
-				<!-- <div class="addBtn" onclick="addTasks('clubhouse'); return false;">Add</div> -->
 			</div>
 
-			<div id="porter" class="zoneBox">
+			<div id="porter" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Porter Turret</h4>
-				<!-- <div class="addBtn" onclick="addTasks('porter'); return false;">Add</div> -->
 			</div>
 
-			<div id="simoni" class="zoneBox">
+			<div id="simoni" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Simoni Observatory</h4>
-				<!-- <div class="addBtn" onclick="addTasks('simoni'); return false;">Add</div> -->
 			</div>
 
-			<div id="m44" class="zoneBox">
+			<div id="m44" class="flex-item zoneBox">
 				<h4 style="margin: 0;">M44</h4></a>
-				<!-- <div class="addBtn" onclick="addTasks('m44'); return false;">Add</div> -->
 			</div>
 
-		</div>
-		<div id="col2" class="colDiv">
+		<!-- </div> -->
+		<!-- <div id="col2" class="colDiv"> -->
 
-			<div id="mcgregor" class="zoneBox">
+			<div id="mcgregor" class="flex-item zoneBox">
 				<h4 style="margin: 0;">McGregor Observatory</h4>
-				<!-- <div class="addBtn" onclick="addTasks('mcgregor'); return false;">Add</div> -->
 			</div>
 
-			<div id="breuning" class="zoneBox">
+			<div id="breuning" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Breuning Observatory</h4>
-				<!-- <div class="addBtn" onclick="addTasks('breuning'); return false;">Add</div> -->
 			</div>
 
-			<div id="bunkhouse" class="zoneBox">
+			<div id="bunkhouse" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Bunkhouse</h4>
-				<!-- <div class="addBtn" onclick="addTasks('bunkhouse'); return false;">Add</div> -->
 			</div>
 
-			<div id="fuel" class="zoneBox">
+			<div id="fuel" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Fuel Shed</h4>
-				<!-- <div class="addBtn" onclick="addTasks('fuel'); return false;">Add</div> -->
 			</div>
 
-			<div id="tuthill" class="zoneBox">
+			<div id="tuthill" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Tuthill Towers</h4>
-				<!-- <div class="addBtn" onclick="addTasks('tuthill'); return false;">Add</div> -->
 			</div>
 
-		</div>
-		<div id="col3" class="colDiv">
+		<!-- </div> -->
+		<!-- <div id="col3" class="colDiv"> -->
 
-			<div id="amphitheater" class="zoneBox">
+			<div id="amphitheater" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Amphitheater</h4>
-				<!-- <div class="addBtn" onclick="addTasks('amphitheater'); return false;">Add</div> -->
 			</div>
 
-			<div id="fruit" class="zoneBox">
+			<div id="fruit" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Fruit Stand</h4>
-				<!-- <div class="addBtn" onclick="addTasks('fruit'); return false;">Add</div> -->
 			</div>
 
-			<div id="other" class="zoneBox">
+			<div id="other" class="flex-item zoneBox">
 				<h4 style="margin: 0;">Other</h4></a>
-				<!-- <div class="addBtn" onclick="addTasks('other'); return false;">Add</div> -->
 			</div>
 
-		</div>
+		<!-- </div> -->
 	</div>
 
 	<div id="dialog-form" title="Add A New Task">

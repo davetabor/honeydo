@@ -15,7 +15,7 @@ var checkForDeletions = function (myCallback) {
     delete jsonData[d];
     // alert(jsonData[delItem].task);
     alert(jsonData);
-    
+
     myCallback();
   }
 }
@@ -347,5 +347,78 @@ var deleteCookie = function () {
 //   xmlhttp.send();
 //   window.scrollTo(0, 0);
 // }
+
+$(function () {
+  var dialog, form,
+
+    emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+    site = $("#site"),
+    task = $("#task"),
+    desc = $("#desc"),
+    goalDate = $("#goalDate"),
+    leader = $("#leader"),
+    members = $("#members");
+
+  function updateTips(t) {
+    tips
+      .text(t)
+      .addClass("ui-state-highlight");
+    setTimeout(function () {
+      tips.removeClass("ui-state-highlight", 1500);
+    }, 500);
+  }
+
+  function checkLength(o, n, min, max) {
+    if (o.val().length > max || o.val().length < min) {
+      o.addClass("ui-state-error");
+      // updateTips("Length of " + n + " must be between " +
+      // min + " and " + max + ".");
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  function checkRegexp(o, regexp, n) {
+    if (!(regexp.test(o.val()))) {
+      o.addClass("ui-state-error");
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  function addUser() {
+    var valid = true;
+    dialog.dialog("close");
+    return valid;
+  }
+
+  dialog = $("#dialog-form").dialog({
+    autoOpen: false,
+    height: 600,
+    width: 350,
+    modal: true,
+    buttons: {
+      "Add Task": addTasks,
+      Cancel: function () {
+        dialog.dialog("close");
+      }
+    },
+    close: function () {
+      form[0].reset();
+    }
+  });
+
+  form = dialog.find("form").on("submit", function (event) {
+    event.preventDefault();
+    addUser();
+  });
+
+  $("#create-user").button().on("click", function () {
+    dialog.dialog("open");
+  });
+});
+
 
 checkForDeletions(saveJSON);

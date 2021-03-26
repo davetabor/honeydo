@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: red 1px solid;
+            background-color: lightskyblue;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .parent {
+            display: flex;
+            height: 500px;
+            max-width: 880px;
+            flex-flow: wrap;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            padding: 10px;
+        }
+        .a1 {background-color: red;}
+        .a2 {background-color: orange;}
+        .a3 {background-color: yellow;}
+        .a4 {background-color: green;}
+        .a5 {background-color: blue;}
+        .a6 {background-color: violet;}
+    </style>
+    </heflex-ad>
+
+<body>
+    <div class="flex-container">
+        <div class="parent">
+            <div class="child a1">
+                <div class="a2" style="width: 220px">Test1</div>
+                <div class="a3" style="width: 220px">Test2</div>
+            </div>
+            <div class="child a2">
+                <div class="a3" style="width: 220px">Test3</div>
+                <div class="a4" style="width: 220px">Test4</div>
+            </div>
+            <div class="child a3">
+                <div class="a4" style="width: 220px">Test5</div>
+                <div class="a5" style="width: 220px">Test6</div>
+            </div>
+            <div class="child a4">
+                <div class="a5" style="width: 220px">Test7</div>
+                <div class="a6" style="width: 220px">Test8</div>
+            </div>
+            <div class="child a5">
+                <div class="a6" style="width: 220px">Test9</div>
+                <div class="a1" style="width: 220px">Test10</div>
+            </div>
+            <div class="child a6">
+                <div class="a1" style="width: 220px">Test11</div>
+                <div class="a2" style="width: 220px">Test12</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
