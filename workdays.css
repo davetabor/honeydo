@@ -1,40 +1,48 @@
 ﻿body {
-	background-color: silver;
+	/* background-color: silver; */
 	font-family: Krub;
 	/* width: 880px; */
 	margin: auto;
 }
+
 @media print {
 	body {
 		width: 100%;
 	}
 }
+
 label {
 	font-weight: bold;
 	color: navy;
 }
+
 input[type=text] {
 	margin-bottom: 24px;
 }
+
 ul {
 	/* margin: 2px; */
 	padding: 2px;
 	list-style-type: none;
 }
-input{
+
+input {
 	padding: 0;
 	margin: 0;
 	float: left;
 }
+
 button {
 	border-radius: 5px;
 	margin: 4px;
 	padding: 0;
 	line-height: 10px;
 }
+
 button.bottomRightText {
 	background-color: pink;
 }
+
 p {
 	margin: 1px;
 }
@@ -43,9 +51,14 @@ hr {
 	border-color: green;
 	margin: 0;
 }
+
 td {
 	padding-left: 5px;
 	border-bottom: gray 1px solid;
+}
+
+.break {
+	flex-basis: 100%;
 }
 
 #events {
@@ -54,7 +67,14 @@ td {
 	height: 500px;
 }
 
-.complete {
+#complete {
+	color: red;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.completeTaskName {
 	text-decoration: overline line-through underline;
 	color: lightgray;
 }
@@ -71,11 +91,11 @@ td {
 	padding: 8px;
 	margin: 20px 20px 0px 20px;
 	border-radius: 10px;
-	font-size: 38px;
+	font-size: 25px;
 	font-weight: bold;
 	color: navy;
 	width: 45%;
-	min-width: 380px;
+	min-width: 290px;
 	text-align: center;
 	height: 80px;
 }
@@ -116,7 +136,7 @@ td {
 
 .nextDay {
 	float: left;
-	background-color: white;
+	background-color: ivory;
 	border: fuchsia 2px solid;
 	padding: 8px;
 	margin: 20px 20px 0px 20px;
@@ -125,9 +145,9 @@ td {
 	font-weight: bold;
 	color: navy;
 	width: 45%;
-	min-width: 380px;
+	min-width: 290px;
 	text-align: center;
-	height: 80px;
+	min-height: 80px;
 }
 
 .addTask {
@@ -177,11 +197,20 @@ h4 {
 	background-color: #eeeeee;
 }
 
+.header-top {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
 .bodyMain {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	float: none;
+	/* height: 450px; */
+	/* float: none; */
+	/* align-items: center; */
 	/* background-color:white; */
 	/* border: black 1px solid; */
 	/* padding: 3px; */
@@ -189,24 +218,30 @@ h4 {
 	border-radius: 10px;
 	/* min-width: 630px; */
 	margin: 0.5%;
-	overflow: hidden;
+	/* overflow: auto; */
 	/* border: orange 1px solid;  */
 	padding: 5px;
 	border-radius: 5px;
 	/* background-color: lightgray; */
 	/* min-width: 880px; */
 	/* width: 99%; */
+	height: 500px;
 }
 
+.zoneName {
+	margin: 0;
+	margin-left: 10px;
+}
 .zoneBox {
 	position: relative;
-	border: solid 1px pink;
+	border: solid 1px black;
 	border-radius: 10px;
 	background-color: #eee;
-	padding: 4px;
 	margin-bottom: 5px;
-	width: 290px;
+	width: 350px;
 	margin: 5px;
+	margin-bottom: 10px;
+	min-height: 75px;
 }
 
 .addBtn {
@@ -302,7 +337,7 @@ th {
 	color: black;
 	cursor: pointer;
 	padding: 0 5px;
-	width: 100%;
+	width: 95%;
 	border: fuchsia 1px solid;
 	text-align: left;
 	outline: none;
@@ -313,9 +348,12 @@ th {
 	/* min-height: 44px; */
 	position: relative;
 	box-shadow: 2px 2px lightsteelblue;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
 	background-color: lightgreen;
 	/* color: white; */
 }
@@ -334,18 +372,25 @@ th {
 	box-shadow: 2px 2px lightsteelblue;
 	margin-bottom: 15px;
 	position: relative;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .bottomLeftText {
 	/* position: absolute; */
 	/* bottom: 0; */
 	/* left: 3px; */
+	width: 100%;
 }
 
 .bottomRightText {
-	position: absolute;
-	bottom: 3px;
-	right: 3px;
+	/* position: absolute; */
+	/* bottom: 3px; */
+	/* right: 3px; */
+	text-align: right;
+	color: black;
+	text-decoration: none;
 }
 
 /* **
@@ -398,4 +443,37 @@ div#users-contain table th {
 .validateTips {
 	border: 1px solid transparent;
 	padding: 0.3em;
+}
+
+#create-user {
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	margin: 0 0.1em 0.1em 0;
+	border: 0.16em solid rgba(255, 255, 255, 0);
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+	text-align: center;
+	transition: all 0.2s;
+	background-color: #4e9af1
+}
+
+#create-user:hover {
+	border-color: rgba(255, 255, 255, 1);
+}
+
+@media all and (max-width:30em) {
+	#create-user {
+		display: block;
+		margin: 0.2em auto;
+	}
+}
+
+#title {
+	text-decoration: underline;
+	font-weight: bold;
 }

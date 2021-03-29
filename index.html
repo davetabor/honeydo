@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<title>STM Workday Tasks</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -17,80 +18,80 @@
 </head>
 
 <body>
-	<div class="heading">
-		STM Workday Tasks
+	<div class="flex-container header-top">
+		<div class="flex-item nextDay	">
+			<h1 id="title" style="text-decoration: underline;">STM Workday Tasks</h1>
+			<p>'Official' Workday Schedule: <a href="https://stellafane.org/news#events">Click&nbsp;Here!</a></p>
+			<p class="nextDayTitle"><i>But, Realistically - Every Saturday!</i></p>
+		</div>
+		<div class="clear"></div>
 	</div>
-	<div class="nextDay	">
-		'Official' Workday Schedule: <a href="https://stellafane.org/news#events">Click Here!</a>
-		<div class="nextDayTitle"><i>But, Realistically - Every Saturday!</i></div>
-	</div>
-	<div class="clear"></div>
 	<div style="text-align: center;">
-	<button id="create-user">Add a new task</button>
+		<button id="create-user">Add a new task</button>
 	</div>
 
 	<div class="flex-container bodyMain">
-		<!-- <div id="col1" class="colDiv"> -->
+		<div id="col1" class="flex-item">
 
-			<div id="site" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Site</h4></a>
+			<div id="site" class="zoneBox">
+				<h4 class="zoneName">Site</h4></a>
 			</div>
 
-			<div id="clubhouse" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Clubhouse</h4>
+			<div id="clubhouse" class="zoneBox">
+				<h4 class="zoneName">Clubhouse</h4>
 			</div>
 
-			<div id="porter" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Porter Turret</h4>
+			<div id="porter" class="zoneBox">
+				<h4 class="zoneName">Porter Turret</h4>
 			</div>
 
-			<div id="simoni" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Simoni Observatory</h4>
+			<div id="simoni" class="zoneBox">
+				<h4 class="zoneName">Simoni Observatory</h4>
 			</div>
 
-			<div id="m44" class="flex-item zoneBox">
-				<h4 style="margin: 0;">M44</h4></a>
+			<div id="m44" class="zoneBox">
+				<h4 class="zoneName">M44</h4></a>
 			</div>
 
-		<!-- </div> -->
-		<!-- <div id="col2" class="colDiv"> -->
+		</div>
+		<div id="col2" class="flex-item">
 
-			<div id="mcgregor" class="flex-item zoneBox">
-				<h4 style="margin: 0;">McGregor Observatory</h4>
+			<div id="mcgregor" class="zoneBox">
+				<h4 class="zoneName">McGregor Observatory</h4>
 			</div>
 
-			<div id="breuning" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Breuning Observatory</h4>
+			<div id="breuning" class="zoneBox">
+				<h4 class="zoneName">Breuning Observatory</h4>
 			</div>
 
-			<div id="bunkhouse" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Bunkhouse</h4>
+			<div id="bunkhouse" class="zoneBox">
+				<h4 class="zoneName">Bunkhouse</h4>
 			</div>
 
-			<div id="fuel" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Fuel Shed</h4>
+			<div id="fuel" class="zoneBox">
+				<h4 class="zoneName">Fuel Shed</h4>
 			</div>
 
-			<div id="tuthill" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Tuthill Towers</h4>
+			<div id="tuthill" class="zoneBox">
+				<h4 class="zoneName">Tuthill Towers</h4>
 			</div>
 
-		<!-- </div> -->
-		<!-- <div id="col3" class="colDiv"> -->
+		</div>
+		<div id="col3" class="flex-item">
 
-			<div id="amphitheater" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Amphitheater</h4>
+			<div id="amphitheater" class="zoneBox">
+				<h4 class="zoneName">Amphitheater</h4>
 			</div>
 
-			<div id="fruit" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Fruit Stand</h4>
+			<div id="fruit" class="zoneBox">
+				<h4 class="zoneName">Fruit Stand</h4>
 			</div>
 
-			<div id="other" class="flex-item zoneBox">
-				<h4 style="margin: 0;">Other</h4></a>
+			<div id="other" class="zoneBox">
+				<h4 class="zoneName">Other</h4></a>
 			</div>
 
-		<!-- </div> -->
+		</div>
 	</div>
 
 	<div id="dialog-form" title="Add A New Task">
@@ -162,7 +163,8 @@
 
 						<div>
 							<p color="black">Thank you!</p>
-							<p style="color: red;">Note: You need cookies enabled to not see this popup all the time.</p>
+							<p style="color: red;">Note: You need cookies enabled to not see this popup all the time.
+							</p>
 						</div>
 
 					</div>

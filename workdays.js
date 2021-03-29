@@ -58,16 +58,18 @@ var buildTasks = function (jsonData) {
       newTask.classList.add("collapsible");
       newTask.classList.add("tdTaskName");
       console.log("complete: " + complete);
-      if (complete == "true") { newTask.classList.add("complete") };
+      if (complete == "true") {
+        newTask.classList.add("complete")
+      };
       newTask.onclick = 'document.getElementById("taskContent").style.maxHeight = "100%"';
       var innerTxt = "";
       if (complete == "true") {
-        innerTxt = innerTxt + "<h4 style=\"color: red; text-align: right;\">COMPLETE</h4>";
-        innerTxt = innerTxt + '<span class="bottomLeftText complete">'
+        innerTxt = innerTxt + "<h4 id=\"complete\">COMPLETE</h4>";
+        innerTxt = innerTxt + '<div class="bottomLeftText completeTaskName">'
       } else {
-        innerTxt = '<span class="bottomLeftText">'
+        innerTxt = '<div class="bottomLeftText">'
       }
-      innerTxt = innerTxt + j + ": " + task + '</span> <span class="bottomRightText" style=\"font-size: .6em;\">[more]</span>';
+      innerTxt = innerTxt + task + '</div> <div class="bottomRightText" style=\"font-size: .6em;\">more</div';
       newTask.innerHTML = innerTxt;
 
       taskBox.appendChild(newTask);
@@ -75,7 +77,9 @@ var buildTasks = function (jsonData) {
       var newContent = document.createElement('div');
       newContent.classList.add("content");
       innerTxt = "";
-      if (complete == "true") { innerTxt = innerTxt + "<h4 style=\"color: red;\">COMPLETE</h4>"; };
+      if (complete == "true") {
+        innerTxt = innerTxt + "<h4 style=\"color: red;\">COMPLETE</h4>";
+      };
       newContent.id = "taskContent" + counter;
       innerTxt = innerTxt + '<table style=\"border: 0; font-size: .75em\">';
       innerTxt = innerTxt + '<tr>';
@@ -101,6 +105,7 @@ var buildTasks = function (jsonData) {
       var textID = "name" + j;
       innerTxt = innerTxt + '<li><input type=\"text\" id=\"' + textID + '\" placeholder=\"Your Name\"><input type=\"button\" onclick=\'addMe(\"' + task + '\", \"' + textID + '\");\' value=\"Go\"></li>';
       innerTxt = innerTxt + '</ul></td></tr></table>';
+      innerTxt = innerTxt + '<div style=\"text-align: right; font-size: 10px;\">';
       innerTxt = innerTxt + '<button onclick=\'markComplete(\"' + task + '\")\' class=\"bottomRightText\" style=\"font-size: .65em; font-weight: bold; padding: 0;\">';
       if (complete == "true") {
         innerTxt = innerTxt + 'Mark Active'
@@ -108,6 +113,7 @@ var buildTasks = function (jsonData) {
         innerTxt = innerTxt + 'Mark Complete'
       }
       innerTxt = innerTxt + '</button>';
+      innerTxt = innerTxt + j + '</div>';
       newContent.innerHTML = innerTxt;
 
       taskBox.appendChild(newContent);
