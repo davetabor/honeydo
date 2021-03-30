@@ -12,7 +12,7 @@ var checkForDeletions = function (myCallback) {
     console.log("delItem: " + d);
     alert("delItem: " + d);
     // alert(jsonData[delItem].task);
-    delete jsonData[d];
+    jsonData.splice(d,1);
     // alert(jsonData[delItem].task);
     alert(jsonData);
 
@@ -113,6 +113,8 @@ var buildTasks = function (jsonData) {
         innerTxt = innerTxt + 'Mark Complete'
       }
       innerTxt = innerTxt + '</button>';
+      innerTxt = innerTxt + '<button class="deletes" onclick = \'deleteTask(' + j + '); return false;\'>Delete (Get Permission First)</button>'
+      innerTxt = innerTxt + '<button class="deletes" onclick="turnOffDeletes(); return false;">Cancel</button>'
       innerTxt = innerTxt + j + '</div>';
       newContent.innerHTML = innerTxt;
 
@@ -120,6 +122,18 @@ var buildTasks = function (jsonData) {
     }
   }
   addListeners();
+}
+
+var deleteTask = function (taskNo) {
+  jsonData.splice(taskNo,1);
+  saveJSON();
+}
+
+var turnOnDeletes = function () {
+  $(".deletes").css("display","block");
+}
+var turnOffDeletes = function () {
+  $(".deletes").css("display","none");
 }
 
 var addTasks = function () {
