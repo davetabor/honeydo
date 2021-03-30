@@ -2,3 +2,359 @@
 [15-Mar-2021 18:32:06 America/Boise] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '{' or '$' in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 72
 [16-Mar-2021 18:39:39 America/Boise] PHP Parse error:  syntax error, unexpected 'alertheader' (T_STRING), expecting ';' or ',' in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 5
 [16-Mar-2021 18:58:03 America/Boise] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 7
+[22-Mar-2021 19:47:36 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:47:36 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:47:40 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:47:40 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:47:44 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:47:44 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:47:49 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:47:49 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:47:55 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:47:55 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:48:03 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:48:03 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:49:39 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:49:39 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:49:42 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:49:42 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:49:49 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:49:49 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:50:01 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:50:01 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:50:03 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:50:03 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[22-Mar-2021 19:50:08 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 14
+[22-Mar-2021 19:50:08 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/workdays.php on line 15
+[23-Mar-2021 18:14:47 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:14:47 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:14:47 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:22:38 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:22:38 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:22:38 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:27:12 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:27:12 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:27:12 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:31:08 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:31:08 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:31:08 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:36:13 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:36:13 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:36:13 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:37:28 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:37:28 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:37:28 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:39:11 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 19
+[23-Mar-2021 18:39:11 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:39:11 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:39:34 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:39:34 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:39:34 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:41:45 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:41:45 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:41:45 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:48:57 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:48:57 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:48:57 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:49:51 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:49:51 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:49:51 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:50:59 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:50:59 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:50:59 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:55:05 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:55:05 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:55:05 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:55:42 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:55:42 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:55:42 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 18:59:05 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 18:59:05 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 18:59:05 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:00:14 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:00:14 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:00:14 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:02:07 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:02:07 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:02:07 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:04:28 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:04:28 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:04:28 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:33:37 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:33:37 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:33:37 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:38:18 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:38:18 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:38:18 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:45:11 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:45:11 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:45:11 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:50:17 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:50:17 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:50:17 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 19:51:53 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 19:51:53 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 19:51:53 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 21:09:31 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 21:09:31 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 21:09:31 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 21:12:20 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 21:12:20 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 21:12:20 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 21:31:36 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 21:31:36 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 21:31:36 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 21:34:15 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 21:34:15 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 21:34:15 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[23-Mar-2021 21:34:32 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[23-Mar-2021 21:34:32 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[23-Mar-2021 21:34:32 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 16:59:25 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 16:59:25 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 16:59:25 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 16:59:41 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 16:59:41 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 16:59:41 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 17:04:10 America/Boise] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;projects.xml&quot; in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/admin.php on line 12
+[24-Mar-2021 17:04:10 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/admin.php on line 13
+[24-Mar-2021 17:30:15 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 17:30:15 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 17:30:15 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 17:44:24 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 17:44:24 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 17:44:24 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:22:15 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:22:15 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:22:15 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:36:47 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:36:47 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:36:47 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:40:45 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:40:45 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:40:45 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:40:50 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:40:50 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:40:50 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:41:57 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:41:57 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:41:57 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:42:03 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:42:03 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:42:03 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:43:52 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:43:52 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:43:52 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:43:56 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:43:56 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:43:56 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:45:38 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:45:38 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:45:38 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:48:17 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:48:17 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:48:17 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:50:26 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:50:26 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:50:26 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:50:39 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:50:39 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:50:39 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:58:04 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:58:04 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:58:04 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 19:58:14 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 19:58:14 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 19:58:14 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 20:00:22 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 20:00:22 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 20:00:22 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 20:00:39 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 20:00:39 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 20:00:39 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 20:02:40 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 20:02:40 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 20:02:40 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 20:26:48 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 20:26:48 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 20:26:48 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 20:26:54 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 20:26:54 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 20:26:54 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 20:34:27 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 20:34:27 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 20:34:27 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 21:18:32 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 21:18:32 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 21:18:32 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 21:21:10 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 21:21:10 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 21:21:10 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 21:23:07 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 21:23:07 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 21:23:07 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 21:33:42 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 21:33:42 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 21:33:42 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 21:38:38 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 21:38:38 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 21:38:38 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[24-Mar-2021 21:39:37 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[24-Mar-2021 21:39:37 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[24-Mar-2021 21:39:37 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 06:13:46 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 06:13:46 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 06:13:46 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 06:35:33 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 06:35:33 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 06:35:33 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 06:35:45 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 06:35:45 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 06:35:45 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 06:37:14 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 06:37:14 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 06:37:14 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 06:38:30 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 06:38:30 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 06:38:30 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 06:52:33 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 06:52:33 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 06:52:33 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 07:52:10 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 07:52:10 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 07:52:10 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 07:52:15 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 07:52:15 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 07:52:15 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 16:35:29 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 16:35:29 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 16:35:29 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 16:35:38 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 16:35:38 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 16:35:38 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[25-Mar-2021 16:35:42 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[25-Mar-2021 16:35:42 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[25-Mar-2021 16:35:42 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 11:38:09 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 11:38:09 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 11:38:09 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 11:39:35 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 11:39:35 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 11:39:35 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 11:40:03 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 11:40:03 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 11:40:03 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 11:40:31 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 11:40:31 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 11:40:31 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 12:53:08 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 12:53:08 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 12:53:08 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 13:50:59 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 13:50:59 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 13:50:59 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[26-Mar-2021 13:51:11 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[26-Mar-2021 13:51:11 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[26-Mar-2021 13:51:11 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:54:44 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:54:44 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:54:44 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:55:01 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:55:01 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:55:01 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:56:36 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:56:36 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:56:36 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:56:55 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:56:55 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:56:55 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:57:41 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:57:41 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:57:41 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:58:21 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:58:21 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:58:21 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 18:59:42 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 18:59:42 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 18:59:42 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:00:24 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:00:24 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:00:24 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:03:18 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:03:18 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:03:18 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:04:06 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:04:06 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:04:06 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:07:41 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:07:41 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:07:41 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:26:57 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:26:57 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:26:57 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:45:32 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:45:32 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:45:32 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:45:42 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:45:42 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:45:42 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:57:10 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:57:10 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:57:10 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[29-Mar-2021 19:58:50 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[29-Mar-2021 19:58:50 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[29-Mar-2021 19:58:50 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:13:18 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:13:18 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:13:18 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:14:12 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:14:12 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:14:12 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:29:51 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:29:51 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:29:51 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:39:21 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:39:21 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:39:21 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:41:03 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:41:03 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:41:03 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:42:20 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:42:20 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:42:20 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:42:54 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:42:54 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:42:54 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:43:26 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:43:26 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:43:26 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:45:38 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:45:38 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:45:38 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:46:12 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:46:12 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:46:12 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:46:36 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:46:36 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:46:36 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:47:27 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:47:27 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:47:27 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:48:05 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:48:05 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:48:05 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:52:48 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:52:48 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:52:48 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:53:23 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:53:23 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:53:23 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 06:54:58 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 06:54:58 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 06:54:58 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 07:00:16 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 07:00:16 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 07:00:16 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
+[30-Mar-2021 07:00:51 America/Boise] PHP Warning:  fopen(): Filename cannot be empty in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 20
+[30-Mar-2021 07:00:51 America/Boise] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 21
+[30-Mar-2021 07:00:51 America/Boise] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home2/stellafa/public_html/stellafane-main/stm_members/workdays/saveJSON.php on line 22
