@@ -321,7 +321,6 @@ var checkForModal = function () {
   if (resp !== "true") {
     document.getElementById('id01').style.display = 'block';
   }
-  return resp;
 }
 
 // Handle Cookies

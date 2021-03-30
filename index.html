@@ -3,6 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>STM Workday Tasks</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
@@ -30,69 +34,55 @@
 		<button id="create-user">Add a new task</button>
 	</div>
 
-	<!-- <div class="flex-container bodyMain"> -->
 	<div class="bodyMain">
-		<!-- <div id="col1" class="flex-item"> -->
-
-			<div id="site" class="zoneBox">
-				<h4 class="zoneName">Site</h4></a>
-			</div>
-
-			<div id="clubhouse" class="zoneBox">
-				<h4 class="zoneName">Clubhouse</h4>
-			</div>
-
-			<div id="porter" class="zoneBox">
-				<h4 class="zoneName">Porter Turret</h4>
-			</div>
-
-			<div id="simoni" class="zoneBox">
-				<h4 class="zoneName">Simoni Observatory</h4>
-			</div>
-
-			<div id="m44" class="zoneBox">
-				<h4 class="zoneName">M44</h4></a>
-			</div>
-
-		<!-- </div> -->
-		<!-- <div id="col2" class="flex-item"> -->
-
-			<div id="mcgregor" class="zoneBox">
-				<h4 class="zoneName">McGregor Observatory</h4>
-			</div>
-
-			<div id="breuning" class="zoneBox">
-				<h4 class="zoneName">Breuning Observatory</h4>
-			</div>
-
-			<div id="bunkhouse" class="zoneBox">
-				<h4 class="zoneName">Bunkhouse</h4>
-			</div>
-
-			<div id="fuel" class="zoneBox">
-				<h4 class="zoneName">Fuel Shed</h4>
-			</div>
-
-			<div id="tuthill" class="zoneBox">
-				<h4 class="zoneName">Tuthill Towers</h4>
-			</div>
-
-		<!-- </div> -->
-		<!-- <div id="col3" class="flex-item"> -->
-
-			<div id="amphitheater" class="zoneBox">
-				<h4 class="zoneName">Amphitheater</h4>
-			</div>
-
-			<div id="fruit" class="zoneBox">
-				<h4 class="zoneName">Fruit Stand</h4>
-			</div>
-
-			<div id="other" class="zoneBox">
-				<h4 class="zoneName">Other</h4></a>
-			</div>
-
-		<!-- </div> -->
+		<div id="site" class="zoneBox">
+			<h4 class="zoneName">Site</h4></a>
+		</div>
+		<div id="clubhouse" class="zoneBox">
+			<h4 class="zoneName">Clubhouse</h4>
+		</div>
+		<div id="porter" class="zoneBox">
+			<h4 class="zoneName">Porter Turret</h4>
+		</div>
+		<div id="simoni" class="zoneBox">
+			<h4 class="zoneName">Simoni Observatory</h4>
+		</div>
+		<div id="m44" class="zoneBox">
+			<h4 class="zoneName">M44</h4></a>
+		</div>
+		<div id="mcgregor" class="zoneBox">
+			<h4 class="zoneName">McGregor Observatory</h4>
+		</div>
+		<div id="breuning" class="zoneBox">
+			<h4 class="zoneName">Breuning Observatory</h4>
+		</div>
+		<div id="flanders" class="zoneBox">
+			<h4 class="zoneName">Flanders Pavilion</h4>
+		</div>
+		<div id="bunkhouse" class="zoneBox">
+			<h4 class="zoneName">Bunkhouse</h4>
+		</div>
+		<div id="tuthill" class="zoneBox">
+			<h4 class="zoneName">Tuthill Towers</h4>
+		</div>
+		<div id="amphitheater" class="zoneBox">
+			<h4 class="zoneName">Amphitheater</h4>
+		</div>
+		<div id="fruit" class="zoneBox">
+			<h4 class="zoneName">Fruit Stand</h4>
+		</div>
+		<div id="fuel" class="zoneBox">
+			<h4 class="zoneName">Fuel Shed</h4>
+		</div>
+		<div id="power" class="zoneBox">
+			<h4 class="zoneName">Power/Repeater Shed</h4>
+		</div>
+		<div id="chicken" class="zoneBox">
+			<h4 class="zoneName">Chicken Coop</h4>
+		</div>
+		<div id="other" class="zoneBox">
+			<h4 class="zoneName">Other</h4></a>
+		</div>
 	</div>
 
 	<div id="dialog-form" title="Add A New Task">
@@ -107,13 +97,16 @@
 					<option value="porter">Porter Turret</option>
 					<option value="simoni">Simoni Observatory</option>
 					<option value="m44">M44</option>
-					<option value="mcgregor">McGregor</option>
+					<option value="mcgregor">McGregor Observatory</option>
 					<option value="breuning">Breuning</option>
+					<option value="flanders">Flanders Pavilion</option>
 					<option value="bunkhouse">Bunkhouse</option>
 					<option value="fuel">Fuel Shed</option>
 					<option value="tuthill">Tuthill Towers</option>
 					<option value="amphitheater">Amphitheater</option>
 					<option value="fruit">Fruit Stand</option>
+					<option value="power">Power/Repeater Shed</option>
+					<option value="chicken">Chicken Coop</option>
 					<option value="other">Other</option>
 				</select>
 				<label for="task">Task Title</label>
@@ -144,7 +137,7 @@
 
 				<div>
 					<div class="w3-container alert">
-						<span class="we-button w3-display-topright" onclick="closeModal();"
+						<span class="we-button w3-display-topright topright closeButton" onclick="closeModal();"
 							style="background-color: yellow">&times;</span>
 						<h2 class="alertheader">State of Vermont Requirements<br />Members and Guests</h2>
 						<ol>
@@ -173,9 +166,9 @@
 			</div>
 		</div>
 	</div>
-		<nav>
-			<a onclick='turnOnDeletes(); return false;'>&nbsp;</a>
-		</nav>
+	<nav>
+		<a onclick='turnOnDeletes(); return false;'>Admin</a>
+	</nav>
 
 	<footer>
 		<script>

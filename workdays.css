@@ -5,6 +5,7 @@
 body {
 	font-family: Krub;
 	margin: auto;
+	background-color: #777;
 }
 
 @media print {
@@ -63,6 +64,7 @@ nav {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 @media print {
 	nav {
 		display: none;
@@ -71,23 +73,26 @@ nav {
 
 nav a {
 	cursor: pointer;
-	background-color: white;
-	border-radius: 5px;
+	background-color: #777;
+	/* border-radius: 5px; */
 	padding: 5px 10px;
-	margin: 5px;
-	border-color: rgb(245, 243, 243);
+	margin: 10px;
+	/* border-color: rgb(245, 243, 243); */
+	border: 0;
 	width: 10px;
 	height: 10px;
-	font-size: 6px;
+	font-size: .5em;
+	color: black;
 
 }
 
 nav a:hover {
-	background-color: #88bbBBFF;
+	/* background-color: #88bbBBFF; */
+	cursor: default;
 }
 
 .deletes {
-	display:none;
+	display: none;
 	font-weight: bold;
 	padding: 5px;
 }
@@ -170,7 +175,7 @@ nav a:hover {
 }
 
 .nextDay {
-	float: left;
+	/* float: left; */
 	background-color: ivory;
 	border: fuchsia 2px solid;
 	padding: 8px;
@@ -180,7 +185,7 @@ nav a:hover {
 	font-weight: bold;
 	color: navy;
 	width: 45%;
-	min-width: 290px;
+	min-width: 250px;
 	text-align: center;
 	min-height: 80px;
 }
@@ -253,16 +258,28 @@ h4 {
 	text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 551px) and (max-width: 992px) {
 	.bodyMain {
-		width: 730px;
+		/* max-width: 730px; */
 		columns: 2;
 	}
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 550px) {
 	.bodyMain {
-		width: 365px;
+		/* max-width: 365px; */
+		columns: 1;
+	}
+}
+
+@media screen and (min-resolution: 192dpi) {
+
+	body,
+	html {
+		/* max-width: 400px; */
+	}
+
+	.bodyMain {
 		columns: 1;
 	}
 }
@@ -272,6 +289,14 @@ h4 {
 		columns: 2;
 	}
 }
+
+/* @media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .bodyMain {
+		columns: 1;
+	}
+} */
 
 /* 320 */
 
@@ -286,19 +311,32 @@ h4 {
 .zoneName {
 	margin: 0;
 	margin-left: 10px;
+	text-shadow: 2px 2px 4px pink;
 }
 
 .zoneBox {
-	/* position: relative; */
-	border: solid 1px black;
+	width: 95%;
+	border: solid 1px lightskyblue;
 	border-radius: 10px;
-	background-color: #eee;
+	background-color: #ccc;
 	margin-bottom: 5px;
-	/* width: 350px; */
-	margin: 5px;
-	margin-bottom: 10px;
-	min-height: 75px;
-	break-inside: avoid;
+	min-width: 250px;
+	margin: 0 5px 5px 5px;
+	box-shadow: 3px 3px 3px black;
+	/* for Chrome and Edge */
+	break-inside: avoid-column;
+	/* for Firefox */
+	display: inline-grid;
+	page-break-inside: avoid;
+}
+/* for Chrome and Edge */
+@supports (break-inside: avoid-column) {
+	.zoneBox {
+		display: block;
+	}
+}
+.zoneBox:hover {
+	background-color: pink;
 }
 
 .addBtn {
@@ -330,9 +368,9 @@ h4 {
 	margin-right: 0.33%;
 }
 
-.inputText {
-	width: 800px;
-}
+/* .inputText { */
+/* width: 800px; */
+/* } */
 
 th {
 	color: black;
@@ -409,7 +447,8 @@ th {
 	margin-right: auto;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
 	background-color: lightgreen;
 	/* color: white; */
 }
@@ -453,7 +492,8 @@ th {
 ** ** Copied
 ** */
 
-label, input {
+label,
+input {
 	display: block;
 }
 
@@ -475,7 +515,7 @@ h1 {
 }
 
 div#users-contain {
-	width: 350px;
+	/* width: 350px; */
 	margin: 20px 0;
 }
 
@@ -485,7 +525,8 @@ div#users-contain table {
 	width: 100%;
 }
 
-div#users-contain table td, div#users-contain table th {
+div#users-contain table td,
+div#users-contain table th {
 	border: 1px solid #eee;
 	padding: .6em 10px;
 	text-align: left;
@@ -537,4 +578,18 @@ div#users-contain table td, div#users-contain table th {
 	button {
 		display: none;
 	}
+}
+
+.topright {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+.closeButton {
+	font-size: 24px;
+	padding: 8px;
+	border: black solid 1px;
+	border-radius: 5px;
+	/* margin: 2px; */
 }
