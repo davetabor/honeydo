@@ -43,10 +43,11 @@ var buildTasks = function (jsonData) {
 
       var newTask = document.createElement('div');
       newTask.id = "task" + counter;
+      newTask.code = j;
       newTask.classList.add("collapsible");
       newTask.classList.add("tdTaskName");
       if (complete == "true") {
-        newTask.classList.add("complete")
+        newTask.classList.add("complete");
       };
       newTask.onclick = 'document.getElementById("taskContent").style.maxHeight = "100%"';
       var innerTxt = "";
@@ -56,7 +57,7 @@ var buildTasks = function (jsonData) {
       } else {
         innerTxt = '<div class="bottomLeftText">'
       }
-      innerTxt = innerTxt + task + '</div> <div class="bottomRightText" style=\"font-size: .6em;\">more</div';
+      innerTxt = innerTxt + task + '</div> <div id=\"more' + j + '\" class="bottomRightText" style=\"font-size: .6em;\">more</div';
       newTask.innerHTML = innerTxt;
 
       taskBox.appendChild(newTask);
@@ -119,6 +120,15 @@ var buildTasks = function (jsonData) {
   addListeners();
 }
 
+var openContent = function (box) {
+  var moreDiv = document.getElementById("more" + box);
+  if (moreDiv.value == "more") {
+    moreDiv.value = "less";
+  } else {
+    moreDiv.value = "more";
+  }
+}
+
 var editDesc = function (ndx) {
   var desc = prompt("Please enter new description", jsonData[ndx].description);
   if (desc != null) {
@@ -127,8 +137,8 @@ var editDesc = function (ndx) {
   }
 }
 var editMembers = function (ndx) {
-  var members= prompt("Please enter members needed (can be text or number):", jsonData[ndx].members);
-  if (members!= null) {
+  var members = prompt("Please enter members needed (can be text or number):", jsonData[ndx].members);
+  if (members != null) {
     jsonData[ndx].members = members
     saveJSON();
   }
@@ -313,6 +323,13 @@ var addListeners = function () {
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
+      var moreDiv = document.getElementById("more" + this.code);
+      if (moreDiv.innerText == "more") {
+        moreDiv.innerText = "less";
+      } else {
+        moreDiv.innerText = "more";
+      }
+
       var content = this.nextElementSibling;
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
