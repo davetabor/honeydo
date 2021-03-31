@@ -5,17 +5,9 @@ var counter = 0;
 var checkForDeletions = function (myCallback) {
   var params = new URLSearchParams(location.search);
   var delItem = params.get('delete');
-  // alert("delItem read: " + delItem);
   if (delItem != null && delItem != "") {
-    console.log("delItem: " + delItem);
     var d = parseInt(delItem);
-    console.log("delItem: " + d);
-    alert("delItem: " + d);
-    // alert(jsonData[delItem].task);
-    jsonData.splice(d,1);
-    // alert(jsonData[delItem].task);
-    alert(jsonData);
-
+    jsonData.splice(d, 1);
     myCallback();
   }
 }
@@ -40,16 +32,12 @@ var buildTasks = function (jsonData) {
     counter++;
     var guts = jsonData[j];
     if (guts.task != "" && guts.task != null) {
-      console.log("j=" + j + ": ");
-      console.log(guts);
       var task = guts.task;
       var dept = guts.dept;
-      console.log(dept);
       var description = guts.description;
       var leader = guts.leader;
       var goalDate = guts.goalDate;
       var members = guts.members;
-      console.log("guts.complete: " + guts.complete);
       var complete = guts.complete;
       var taskBox = document.getElementById(dept);
 
@@ -57,7 +45,6 @@ var buildTasks = function (jsonData) {
       newTask.id = "task" + counter;
       newTask.classList.add("collapsible");
       newTask.classList.add("tdTaskName");
-      console.log("complete: " + complete);
       if (complete == "true") {
         newTask.classList.add("complete")
       };
@@ -84,22 +71,30 @@ var buildTasks = function (jsonData) {
       innerTxt = innerTxt + '<table style=\"border: 0; font-size: .75em\">';
       innerTxt = innerTxt + '<tr>';
       innerTxt = innerTxt + '<th>Description</th>';
-      innerTxt = innerTxt + '<td>' + description + '</td>';
+      innerTxt = innerTxt + '<td><div class="td">' + description + '</div> ';
+      innerTxt = innerTxt + '<button class="edits" onclick = \'editDesc(' + j + '); return false;\'><i class="fas fa-pen"></button>';
+      innerTxt = innerTxt + '</td>';
       innerTxt = innerTxt + '</tr><tr>';
       innerTxt = innerTxt + '<th>Members Needed</th>';
-      innerTxt = innerTxt + '<td>' + members + '</td>';
+      innerTxt = innerTxt + '<td><div class="td">' + members + '</div> ';
+      innerTxt = innerTxt + '<button class="edits" onclick = \'editMembers(' + j + '); return false;\'><i class="fas fa-pen"></button>';
+      innerTxt = innerTxt + '</td>';
       innerTxt = innerTxt + '</tr><tr>';
       innerTxt = innerTxt + '<th>Completion Date</th>';
-      innerTxt = innerTxt + '<td>' + goalDate + '</td>';
+      innerTxt = innerTxt + '<td><div class="td">' + goalDate + '</div> ';
+      innerTxt = innerTxt + '<button class="edits" onclick = \'editGoal(' + j + '); return false;\'><i class="fas fa-pen"></i></button>';
+      innerTxt = innerTxt + '</td>';
       innerTxt = innerTxt + '</tr><tr>';
       innerTxt = innerTxt + '<th>Team Lead</th>';
-      innerTxt = innerTxt + '<td>' + leader + '</td>';
+      innerTxt = innerTxt + '<td><div class="td">' + leader + '</div> ';
+      innerTxt = innerTxt + '<button class="edits" onclick = \'editLeader(' + j + '); return false;\'><i class="fas fa-pen"></i></button>';
+      innerTxt = innerTxt + '</td>';
       innerTxt = innerTxt + '</tr><tr>';
       innerTxt = innerTxt + '<th>Volunteers</th>';
       innerTxt = innerTxt + '<td><ul>';
       if (guts.workers != null && guts.workers != []) {
         for (var m = 0; m < guts.workers.length; m++) {
-          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <button onclick=\'removeMe(\"' + task + '\", \"' + guts.workers[m] + '\");\'>X</button></li>';
+          innerTxt = innerTxt + '<li>' + guts.workers[m] + ' <button class="remove-button" onclick=\'removeMe(\"' + task + '\", \"' + guts.workers[m] + '\");\'><i class="far fa-window-close"></i></button></li>';
         }
       }
       var textID = "name" + j;
@@ -113,6 +108,7 @@ var buildTasks = function (jsonData) {
         innerTxt = innerTxt + 'Mark Complete'
       }
       innerTxt = innerTxt + '</button>';
+      innerTxt = innerTxt + '<button class="deletes" onclick = \'editTask(' + j + '); return false;\'>Edit</button>'
       innerTxt = innerTxt + '<button class="deletes" onclick = \'deleteTask(' + j + '); return false;\'>Delete (Get Permission First)</button>'
       innerTxt = innerTxt + '<button class="deletes" onclick="turnOffDeletes(); return false;">Cancel</button>'
       innerTxt = innerTxt + j + '</div>';
@@ -124,16 +120,45 @@ var buildTasks = function (jsonData) {
   addListeners();
 }
 
+var editDesc = function (ndx) {
+  var desc = prompt("Please enter new description", jsonData[ndx].description);
+  if (desc != null) {
+    jsonData[ndx].description = desc;
+    saveJSON();
+  }
+}
+var editMembers = function (ndx) {
+  var members= prompt("Please enter members needed (can be text or number):", jsonData[ndx].members);
+  if (members!= null) {
+    jsonData[ndx].members = members
+    saveJSON();
+  }
+}
+var editGoal = function (ndx) {
+  var goal = prompt("Please enter new goal for completion", jsonData[ndx].goalDate);
+  if (goal != null) {
+    jsonData[ndx].goalDate = goal;
+    saveJSON();
+  }
+}
+var editLeader = function (ndx) {
+  var leader = prompt("Please enter new team leader", jsonData[ndx].leader);
+  if (leader != null) {
+    jsonData[ndx].leader = leader;
+    saveJSON();
+  }
+}
+
 var deleteTask = function (taskNo) {
-  jsonData.splice(taskNo,1);
+  jsonData.splice(taskNo, 1);
   saveJSON();
 }
 
 var turnOnDeletes = function () {
-  $(".deletes").css("display","block");
+  $(".deletes").css("display", "block");
 }
 var turnOffDeletes = function () {
-  $(".deletes").css("display","none");
+  $(".deletes").css("display", "none");
 }
 
 var addTasks = function () {
@@ -155,7 +180,6 @@ var addTasks = function () {
 
 var addMe = function (task, textID) {
   var name = $("#" + textID).val();
-  alert("task: " + task + ", textID: " + textID + ", name: " + name);
   if (name != "" && name != null) {
     for (var j = 0; j < jsonData.length; j++) {
       guts = jsonData[j];
@@ -190,18 +214,14 @@ var markComplete = function (task) {
 }
 
 var removeMe = function (task, name) {
-  console.log("removeMe Started... " + task + ", " + name);
   // var name = $("#" + textID).val();
   if (name != "" && name != null) {
     for (var j = 0; j < jsonData.length; j++) {
       guts = jsonData[j];
-      console.log("trying record" + j);
       if (guts.task == task) {
-        console.log("Record detected...");
         for (var w = 0; w < guts.workers.length; w++) {
           if (guts.workers[w] == name) {
             delete guts.workers[w];
-            console.log("Found It!!");
             saveJSON();
           }
         }
@@ -211,7 +231,6 @@ var removeMe = function (task, name) {
 }
 
 var appendTask = function (task, desc, goal, leader, loc, members) {
-  console.log("--- INPUTS: " + task + " - " + desc + " - " + goal + " - " + leader + " - " + loc + " - " + members + " ---");
   var newData = {
     "task": task,
     "description": desc,
@@ -220,9 +239,6 @@ var appendTask = function (task, desc, goal, leader, loc, members) {
     "goalDate": goal,
     "members": members
   };
-  console.log("newData: ");
-  console.log(newData);
-  console.log("jsonData: ")
   jsonData.push(newData);
   saveJSON();
 }
@@ -292,12 +308,10 @@ var getLocation = function (loc) {
 
 // Listeners
 var addListeners = function () {
-  console.log("addListeners Start");
   var coll = document.getElementsByClassName("collapsible");
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    // console.log(coll[i]);
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
