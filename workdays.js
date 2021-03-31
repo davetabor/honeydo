@@ -108,7 +108,6 @@ var buildTasks = function (jsonData) {
         innerTxt = innerTxt + 'Mark Complete'
       }
       innerTxt = innerTxt + '</button>';
-      innerTxt = innerTxt + '<button class="deletes" onclick = \'editTask(' + j + '); return false;\'>Edit</button>'
       innerTxt = innerTxt + '<button class="deletes" onclick = \'deleteTask(' + j + '); return false;\'>Delete (Get Permission First)</button>'
       innerTxt = innerTxt + '<button class="deletes" onclick="turnOffDeletes(); return false;">Cancel</button>'
       innerTxt = innerTxt + j + '</div>';
