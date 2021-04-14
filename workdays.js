@@ -13,7 +13,7 @@ var checkForDeletions = function (myCallback) {
 }
 var getProjects = function () {
   $.ajax({
-    url: 'https://stellafane.org/stm_members/workdays/php/getProjects.php',
+    url: 'https://stellafane.org/stm_members/honeydo/php/getProjects.php',
     type: 'GET',
     success: function (data) {
       jsonData = data;
@@ -392,7 +392,7 @@ var deleteCookie = function () {
 //       document.getElementById("projects").innerHTML = xmlhttp.responseText;
 //     }
 //   }
-//   xmlhttp.open("GET", "workdays.php", true);
+//   xmlhttp.open("GET", "honeydo.php", true);
 //   xmlhttp.send();
 //   window.scrollTo(0, 0);
 // }
