@@ -4,8 +4,9 @@
 
 body {
 	font-family: Krub;
-	margin: auto;
-	background-color: #777;
+	margin: 10px;
+	background-color: #000;
+	overflow: visible;
 }
 
 @media print {
@@ -44,7 +45,7 @@ button {
 }
 
 button.bottomRightText {
-	background-color: pink;
+	background-color: lightgoldenrodyellow;
 }
 
 p {
@@ -197,10 +198,10 @@ nav a:hover {
 	font-size: 20px;
 	font-weight: bold;
 	color: navy;
-	width: 45%;
-	min-width: 250px;
+	/* width: 45%; */
+	/* min-width: 250px; */
 	text-align: center;
-	min-height: 80px;
+	/* min-height: 80px; */
 	box-shadow: 3px 3px 7px black;
 }
 
@@ -262,14 +263,15 @@ h4 {
 	/* display: flex; */
 	/* flex-flow: row wrap; */
 	/* justify-content: center; */
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	border-radius: 10px;
-	/* margin: 0.5%; */
+	margin: -10px;
 	padding: 5px;
 	border-radius: 5px;
 	columns: 3;
 	column-gap: 0;
 	text-align: center;
+	overflow: visible;
 }
 
 @media screen and (min-width: 551px) and (max-width: 992px) {
@@ -319,18 +321,19 @@ h4 {
 .zoneName {
 	margin: 0;
 	margin-left: 10px;
-	text-shadow: 2px 2px 4px pink;
+	text-shadow: 2px 2px 4px lightskyblue;
 }
 
 .zoneBox {
 	width: 95%;
-	border: solid 1px lightskyblue;
+	border: solid 2px skyblue;
 	border-radius: 10px;
-	background-color: #ccc;
-	margin-bottom: 5px;
+	background-color: rgb(198, 243, 198);
+	margin-bottom: 3px;
 	min-width: 250px;
-	margin: 0 5px 12px 5px;
-	box-shadow: 3px 3px 7px black;
+	margin: 5px 5px 12px 5px;
+	/* box-shadow: 3px 3px 7px black; */
+	/* filter: drop-shadow(3px 3px 3px teal); */
 	/* for Chrome and Edge */
 	break-inside: avoid-column;
 	/* for Firefox */
@@ -344,7 +347,7 @@ h4 {
 	}
 }
 .zoneBox:hover {
-	background-color: lightpink;
+	background-color: lightsteelblue;
 }
 
 .addBtn {
@@ -457,7 +460,7 @@ th {
 
 .active,
 .collapsible:hover {
-	background-color: lightgreen;
+	background-color: lightgoldenrodyellow;
 	/* color: white; */
 }
 
@@ -578,7 +581,7 @@ div#users-contain table th {
 }
 
 #title {
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	font-weight: bold;
 	margin: 0 auto;
 }

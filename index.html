@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>STM Workday Tasks</title>
+	<title>Honey-Do List</title>
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
@@ -15,7 +15,7 @@
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-		<script src="https://kit.fontawesome.com/020311f9fa.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/020311f9fa.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="honeydo.css" media="screen" />
 	<link rel="stylesheet" href="honeydo.css" media="handheld" />
@@ -26,89 +26,70 @@
 <body>
 	<div class="flex-container header-top">
 		<div class="flex-item nextDay	">
-			<h1 id="title" style="text-decoration: underline;">STM Workday Tasks</h1>
-			<p>'Official' Workday Schedule: <a href="https://stellafane.org/news#events">Click&nbsp;Here!</a></p>
-			<p class="nextDayTitle"><i>But, Realistically - Every Saturday!</i></p>
+			<h1 id="title">The Honey-Do List</h1>
 		</div>
-		<div class="clear"></div>
+		<!-- <div class="clear"></div> -->
 	</div>
-	<div style="text-align: center;">
+	<div style="text-align: center; margin: 10px;">
 		<button id="create-user">Add a new task</button>
 	</div>
 
 	<div class="bodyMain">
-		<div id="site" class="zoneBox">
-			<h4 class="zoneName">Site</h4></a>
+		<div id="interior" class="zoneBox">
+			<h4 class="zoneName">House - Interior</h4>
 		</div>
-		<div id="clubhouse" class="zoneBox">
-			<h4 class="zoneName">Clubhouse</h4>
+		<div id="exterior" class="zoneBox">
+			<h4 class="zoneName">House - Exterior</h4>
 		</div>
-		<div id="porter" class="zoneBox">
-			<h4 class="zoneName">Porter Turret</h4>
+		<div id="yard" class="zoneBox">
+			<h4 class="zoneName">Yard</h4>
 		</div>
-		<div id="simoni" class="zoneBox">
-			<h4 class="zoneName">Simoni Observatory</h4>
+		<div id="truck" class="zoneBox">
+			<h4 class="zoneName">Truck</h4>
 		</div>
-		<div id="m44" class="zoneBox">
-			<h4 class="zoneName">M44</h4></a>
+		<div id="camper" class="zoneBox">
+			<h4 class="zoneName">Camper</h4>
 		</div>
-		<div id="mcgregor" class="zoneBox">
-			<h4 class="zoneName">McGregor Observatory</h4>
+		<div id="popup" class="zoneBox">
+			<h4 class="zoneName">Pop-Up Camper</h4>
 		</div>
-		<div id="breuning" class="zoneBox">
-			<h4 class="zoneName">Breuning Observatory</h4>
+		<div id="trailer" class="zoneBox">
+			<h4 class="zoneName">Utility Trailer</h4>
 		</div>
-		<div id="flanders" class="zoneBox">
-			<h4 class="zoneName">Flanders Pavilion</h4>
+		<div id="samantha" class="zoneBox">
+			<h4 class="zoneName">Samantha</h4>
 		</div>
-		<div id="bunkhouse" class="zoneBox">
-			<h4 class="zoneName">Bunkhouse</h4>
+		<div id="shawn" class="zoneBox">
+			<h4 class="zoneName">Shawn</h4>
 		</div>
-		<div id="tuthill" class="zoneBox">
-			<h4 class="zoneName">Tuthill Towers</h4>
+		<div id="liam" class="zoneBox">
+			<h4 class="zoneName">Liam</h4>
 		</div>
-		<div id="amphitheater" class="zoneBox">
-			<h4 class="zoneName">Amphitheater</h4>
-		</div>
-		<div id="fruit" class="zoneBox">
-			<h4 class="zoneName">Fruit Stand</h4>
-		</div>
-		<div id="fuel" class="zoneBox">
-			<h4 class="zoneName">Fuel Shed</h4>
-		</div>
-		<div id="power" class="zoneBox">
-			<h4 class="zoneName">Power/Repeater Shed</h4>
-		</div>
-		<div id="chicken" class="zoneBox">
-			<h4 class="zoneName">Chicken Coop</h4>
+		<div id="momdad" class="zoneBox">
+			<h4 class="zoneName">Mom & Dad</h4>
 		</div>
 		<div id="other" class="zoneBox">
-			<h4 class="zoneName">Other</h4></a>
+			<h4 class="zoneName">Other</h4>
 		</div>
 	</div>
+	<div height="20px">&nbsp;</div>
 
 	<div id="dialog-form" title="Add A New Task">
-		<!-- <p class="validateTips">All form fields are required.</p> -->
-
 		<form>
 			<fieldset>
 				<label>Work Area</label>
 				<select id="location" name="location">
-					<option value="site">Site</option>
-					<option value="clubhouse">Clubhouse</option>
-					<option value="porter">Porter Turret</option>
-					<option value="simoni">Simoni Observatory</option>
-					<option value="m44">M44</option>
-					<option value="mcgregor">McGregor Observatory</option>
-					<option value="breuning">Breuning</option>
-					<option value="flanders">Flanders Pavilion</option>
-					<option value="bunkhouse">Bunkhouse</option>
-					<option value="fuel">Fuel Shed</option>
-					<option value="tuthill">Tuthill Towers</option>
-					<option value="amphitheater">Amphitheater</option>
-					<option value="fruit">Fruit Stand</option>
-					<option value="power">Power/Repeater Shed</option>
-					<option value="chicken">Chicken Coop</option>
+					<option value="interior">House - Interior</option>
+					<option value="exterior">House - Exterior</option>
+					<option value="yard">Yard</option>
+					<option value="truck">Truck</option>
+					<option value="camper">Camper</option>
+					<option value="popup">Pop-Up</option>
+					<option value="trailer">Utility Trailer</option>
+					<option value="samantha">Samantha</option>
+					<option value="shawn">Shawn</option>
+					<option value="liam">Liam</option>
+					<option value="momdad">Mom & Dad</option>
 					<option value="other">Other</option>
 				</select>
 				<label for="task">Task Title</label>
@@ -120,49 +101,25 @@
 				<label for="goalDate">Goal Date</label>
 				<input name="goalDate" id="goalDate" value="" placeholder="Goal"
 					class="text ui-widget-content ui-corner-all">
-				<label for="leader">Leader</label>
-				<input name="leader" id="leader" value="" placeholder="Leader"
-					class="text ui-widget-content ui-corner-all">
-				<label for="members">Members Needed</label>
-				<input name="members" id="members" value="" placeholder="# of Members Needed"
-					class="text ui-widget-content ui-corner-all">
-
-				<!-- Allow form submission with keyboard without duplicating the dialog button -->
 				<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 			</fieldset>
 		</form>
 	</div>
 
+	<!-- Pop-Up Modal -->
 	<div class="w3-container">
 		<div id="id01" class="w3-modal">
 			<div class="w3-modal-content w3-card-4 w3-animate-zoom">
-
 				<div>
 					<div class="w3-container alert">
 						<span class="we-button w3-display-topright topright closeButton" onclick="closeModal();"
 							style="background-color: yellow">&times;</span>
-						<h2 class="alertheader">State of Vermont Requirements<br />Members and Guests</h2>
-						<ol>
-							<li>Non-Vermonters: Quarantining before entry to the site must be done unless you have
-								documented vaccine
-
-								<div> completion more than 14 days prior
-							</li>
-							<li>Everyone: You must sign-in in the pavilion upon entry to the site
-								<ul>
-
-									<li>Log your name, phone number and temperature in the log just inside the door</li>
-								</ul>
-							</li>
-						</ol>
-
-
+						<h2 class="alertheader">Welcome</h2>
 						<div>
 							<p color="black">Thank you!</p>
 							<p style="color: red;">Note: You need cookies enabled to not see this popup all the time.
 							</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -177,7 +134,6 @@
 			$("#dialog").dialog();
 			checkForModal();
 			getProjects();
-			// addListeners();
 		</script>
 	</footer>
 </body>
